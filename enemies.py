@@ -52,7 +52,7 @@ class Enemies ():
     class Minotaur():
         def MinotaurAppear():
             input ("Now this will be your first real test: (Click enter to continue) ")
-            print ("OH NO YOU FOUND A Minotaur")
+            print ("OH NO YOU FOUND A MINOTAUR")
             print ("Here are his stats")
             minotaurhealth = 20
             minotaurattack = 20
@@ -62,15 +62,52 @@ class Enemies ():
             print ("Speed: ",minotaurspeed)
         MinotaurAppear()
 
-    class Minotaur():
+    class Cyclops():
         def CyclopsAppear():
-            input ("OH NO YOU FOUND A Cyclops (Click enter to continue)")
+            input ("OH NO YOU FOUND A CYCLOPS (Click enter to continue)")
             print ("Here are his stats")
-            cyclopshealth = 20
-            cyclopsattack = 20
-            cyclopsspeed = 20
+            cyclopshealth = 25
+            cyclopsattack = 25
+            cyclopsspeed = 10
             print ("Health: ",cyclopshealth)
             print ("Attack: ",cyclopsattack)
             print ("Speed: ",cyclopsspeed)
         CyclopsAppear()
+
+    
+    class GiantSpider():
+        def GiantSpiderAppear():
+            input ("OH NO YOU FOUND A GIANT SPIDER (Click enter to continue)")
+            print ("Here are his stats")
+            giantspiderhealth = 20 
+            giantspiderattack = 25
+            giantspiderspeed = 30
+            print ("Health: ",giantspiderhealth)
+            print ("Attack: ",giantspiderattack)
+            print ("Speed: ",giantspiderspeed)
+        GiantSpiderAppear()
+
+    class Yeti():
+        def YetiAppear():
+            input ("OH NO YOU FOUND A YETI (Click enter to continue)")
+            print ("Here are his stats")
+            yetihealth = 30
+            yetiattack = 30
+            yetispeed = 15
+            print ("Health: ",yetihealth)
+            print ("Attack: ",yetiattack)
+            print ("Speed: ",yetispeed)
+        YetiAppear() 
+
+    class Hydra():
+        def HydraAppear():
+            input ("NOW THIS HYDRA IS THE FINAL BOSS, DEFEAT HIM TO WIN! (Click enter to continue)")
+            print ("Here are his stats")
+            hydrahealth = 40
+            hydraattack = 40
+            hydraspeed = 40
+            print ("Health: ",hydrahealth)
+            print ("Attack: ",hydraattack)
+            print ("Speed: ",hydraspeed)
+        HydraAppear()
 Enemies()
