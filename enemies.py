@@ -111,3 +111,5 @@ class Enemies ():
             print ("Speed: ",hydraspeed)
         HydraAppear()
 Enemies()
+
+
