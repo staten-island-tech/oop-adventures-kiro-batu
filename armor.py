@@ -9,13 +9,15 @@ class item():
             end = 15
             values = list(range(start, end)) 
             randomnum = (random.choice(values))
-            print ("This shield provides a boost of",randomnum, "to your health")
+            ShieldHealth = randomnum
+            print ("This shield provides a boost of",ShieldHealth, "to your health")
         def speed ():
             start = 5
             end = 15
             values = list(range(start, end))
             randomnum = (random.choice(values))
-            print ("Yet this shield also makes you slower by", randomnum )
+            ShieldSpeed = randomnum
+            print ("Yet this shield also makes you slower by", ShieldSpeed )
         health()
         speed()
     Shield()
@@ -27,7 +29,8 @@ class item():
             end = 15
             values = list(range(start, end)) 
             randomnum = (random.choice(values))
-            print ("This pair of boots provides a boost of",randomnum, "to your speed")
+            BootsSpeed=randomnum
+            print ("This pair of boots provides a boost of",BootsSpeed, "to your speed")
         speed()
     Boots()
 
@@ -38,13 +41,15 @@ class item():
             end = 20
             values = list(range(start, end)) 
             randomnum = (random.choice(values))
-            print ("This chestplate provides a boost of",randomnum, "to your health")
+            ChestplateHealth = randomnum
+            print ("This chestplate provides a boost of",ChestplateHealth, "to your health")
         def speed ():
             start = 5
             end = 15
             values = list(range(start, end))
             randomnum = (random.choice(values))
-            print ("Yet this chestplate also makes you slower by", randomnum )
+            ChestplateSpeed = randomnum
+            print ("Yet this chestplate also makes you slower by", ChestplateSpeed )
         health()
         speed()
     Chestplate()
@@ -56,13 +61,15 @@ class item():
             end = 10
             values = list(range(start, end)) 
             randomnum = (random.choice(values))
-            print ("This cloack provides a boost of",randomnum, "to your health")
+            CloakHealth = randomnum
+            print ("This cloack provides a boost of", CloakHealth, "to your health")
         def speed ():
             start = 10
             end = 20
             values = list(range(start, end))
             randomnum = (random.choice(values))
-            print ("This cloak also makes you faster by", randomnum )
+            CloakSpeed = randomnum
+            print ("This cloak also makes you faster by", CloakSpeed )
         health()
         speed()
     Cloak()
