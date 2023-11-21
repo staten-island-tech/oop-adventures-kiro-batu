@@ -52,7 +52,7 @@ class Enemies ():
     class Minotaur():
         def MinotaurAppear():
             input ("Now this will be your first real test: (Click enter to continue) ")
-            print ("OH NO YOU FOUND A MINOTAUR")
+            input ("OH NO YOU FOUND A MINOTAUR (Click enter to continue)")
             print ("Here are his stats")
             minotaurhealth = 20
             minotaurattack = 20
@@ -101,7 +101,7 @@ class Enemies ():
 
     class Hydra():
         def HydraAppear():
-            input ("NOW THIS HYDRA IS THE FINAL BOSS, DEFEAT HIM TO WIN! (Click enter to continue)")
+            input ("OH NO YOU FOUND A HYDRA (Click enter to continue)")
             print ("Here are his stats")
             hydrahealth = 40
             hydraattack = 40
@@ -110,4 +110,16 @@ class Enemies ():
             print ("Attack: ",hydraattack)
             print ("Speed: ",hydraspeed)
         HydraAppear()
+
+    class nelahWrM():
+        def nelahWrMAppear():
+            input ("YOU FOUND A WILD NELAHW RM. DEFEAT HIM TO WIN! (Click enter to continue)")
+            print ("Here is the final boss' stats")
+            nelahwrmhealth = 50
+            nelahwrmattack = 50
+            nelahwrmspeed = 50
+            print ("Health:", nelahwrmhealth)
+            print ("Attack:", nelahwrmattack)
+            print ("Speed:", nelahwrmspeed)
+        nelahWrMAppear()
 Enemies()
