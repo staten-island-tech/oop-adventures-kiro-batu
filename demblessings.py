@@ -9,8 +9,9 @@ class Blessings():
             end = 25
             values = list(range(start, end)) 
             randomnum = (random.choice(values))
-            print ("This charm is imbued with the vitality of Hercules and it provides a boost of",randomnum, "to your health, use it well")
             Herculesbuff = randomnum
+            print ("This charm is imbued with the vitality of Hercules and it provides a boost of",Herculesbuff, "to your health, use it well")
+            
         Defensebuff()
 
     class Hermes():
@@ -19,8 +20,9 @@ class Blessings():
             end = 25
             values = list(range(start,end))
             randomnum = (random.choice(values))
-            print ("This charm is imbued with the agility of Hermes and it provides a boost of",randomnum, "to your speed, use it wisely")
             Hermesbuff = randomnum
+            print ("This charm is imbued with the agility of Hermes and it provides a boost of",Hermesbuff, "to your speed, use it wisely")
+            
         Speedbuff()
 
     class Artemis():
@@ -29,8 +31,8 @@ class Blessings():
             end = 25 
             values = list(range(start, end)) 
             randomnum = (random.choice(values))
-            print ("This charm is imbued with the agility of Hermes and it provides a boost of",randomnum, "to your speed, use it wisely")
             Artemisbuff = randomnum
+            print ("This charm is imbued with the agility of Hermes and it provides a boost of",Artemisbuff, "to your speed, use it wisely")
         Attackbuff()
 
 
