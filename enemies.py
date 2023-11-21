@@ -11,7 +11,6 @@ class Enemies ():
             print ("Health:",slimehealth)
             print ("Attack:",slimeattack)
             print ("Speed:",slimespeed)
-        SlimeAppear()
 
     class Zombies():
         def ZombieAppear():
@@ -23,7 +22,6 @@ class Enemies ():
             print ("Health:",zombiehealth)
             print ("Attack:",zombieattack)
             print ("Speed:",zombiespeed)
-        ZombieAppear()
 
     class Goblins():
         def GoblinAppear():
@@ -35,7 +33,6 @@ class Enemies ():
             print ("Health: ",goblinhealth)
             print ("Attack: ",goblinattack)
             print ("Speed: ",goblinspeed)
-        GoblinAppear()
     
     class Skeleton():
         def SkeletonAppear():
@@ -47,7 +44,6 @@ class Enemies ():
             print ("Health: ",skeletonhealth)
             print ("Attack: ",skeletonattack)
             print ("Speed: ",skeletonspeed)
-        SkeletonAppear()
     
     class Minotaur():
         def MinotaurAppear():
@@ -60,7 +56,6 @@ class Enemies ():
             print ("Health: ",minotaurhealth)
             print ("Attack: ",minotaurattack)
             print ("Speed: ",minotaurspeed)
-        MinotaurAppear()
 
     class Cyclops():
         def CyclopsAppear():
@@ -72,7 +67,6 @@ class Enemies ():
             print ("Health: ",cyclopshealth)
             print ("Attack: ",cyclopsattack)
             print ("Speed: ",cyclopsspeed)
-        CyclopsAppear()
 
     
     class GiantSpider():
@@ -85,7 +79,6 @@ class Enemies ():
             print ("Health: ",giantspiderhealth)
             print ("Attack: ",giantspiderattack)
             print ("Speed: ",giantspiderspeed)
-        GiantSpiderAppear()
 
     class Yeti():
         def YetiAppear():
@@ -97,7 +90,6 @@ class Enemies ():
             print ("Health: ",yetihealth)
             print ("Attack: ",yetiattack)
             print ("Speed: ",yetispeed)
-        YetiAppear() 
 
     class Hydra():
         def HydraAppear():
@@ -109,7 +101,6 @@ class Enemies ():
             print ("Health: ",hydrahealth)
             print ("Attack: ",hydraattack)
             print ("Speed: ",hydraspeed)
-        HydraAppear()
 
     class nelahWrM():
         def nelahWrMAppear():
@@ -121,5 +112,4 @@ class Enemies ():
             print ("Health:", nelahwrmhealth)
             print ("Attack:", nelahwrmattack)
             print ("Speed:", nelahwrmspeed)
-        nelahWrMAppear()
 Enemies()
