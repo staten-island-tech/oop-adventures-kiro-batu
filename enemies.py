@@ -1,6 +1,9 @@
-print ("You have encountered some Enemies on your way. These Enemies only get bigger and harder to defeat. We will start off easy.")
-
 class Enemies ():
+
+    def TheRules():
+        print ("You have encountered some Enemies on your way. These Enemies only get bigger and harder to defeat. We will start off easy.")
+    TheRules()
+
     class Slimes():
         def SlimeAppear():
             input ("OH NO YOU FOUND A SLIME: (Click enter to continue) ")
