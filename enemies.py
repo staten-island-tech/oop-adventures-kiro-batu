@@ -101,7 +101,7 @@ class Enemies ():
             print ("Health: ",hydrahealth)
             print ("Attack: ",hydraattack)
             print ("Speed: ",hydraspeed)
-
+            
     class nelahWrM():
         def nelahWrMAppear():
             input ("YOU FOUND A WILD NELAHW RM. DEFEAT HIM TO WIN! (Click enter to continue)")
