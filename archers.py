@@ -10,7 +10,7 @@ class archer ():
         values = list(range(start,end))
         randomattack= random.choice(values)
         print ("Your Archer Attack is:", randomattack)
-    ArcherAttack()
+    
 
 
     def ArcherSpeed():
@@ -19,7 +19,7 @@ class archer ():
         values = list(range(start,end))
         randomspeed= random.choice(values)
         print ("Your Archer Speed is:", randomspeed)
-    ArcherSpeed()
+
 
 
     def ArcherHealth():
@@ -28,5 +28,5 @@ class archer ():
         values = list(range(start,end))
         randomhealth= random.choice(values)
         print ("Your Archer Health is:", randomhealth)
-    ArcherHealth()
+    
 archer()
