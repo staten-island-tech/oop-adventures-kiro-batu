@@ -101,26 +101,16 @@ class Enemies ():
             print ("Health: ",hydrahealth)
             print ("Attack: ",hydraattack)
             print ("Speed: ",hydraspeed)
-<<<<<<< HEAD
-<<<<<<< HEAD
         HydraAppear()
-Enemies()
 
-
-=======
-
-=======
-            
->>>>>>> Enemies
     class nelahWrM():
-        def nelahWrMAppear():
-            input ("YOU FOUND A WILD NELAHW RM. DEFEAT HIM TO WIN! (Click enter to continue)")
-            print ("Here is the final boss' stats")
-            nelahwrmhealth = 50
-            nelahwrmattack = 50
-            nelahwrmspeed = 50
-            print ("Health:", nelahwrmhealth)
-            print ("Attack:", nelahwrmattack)
-            print ("Speed:", nelahwrmspeed)
+            def nelahWrMAppear():
+                input ("YOU FOUND A WILD NELAHW RM. DEFEAT HIM TO WIN! (Click enter to continue)")
+                print ("Here is the final boss' stats")
+                nelahwrmhealth = 50
+                nelahwrmattack = 50
+                nelahwrmspeed = 50
+                print ("Health:", nelahwrmhealth)
+                print ("Attack:", nelahwrmattack)
+                print ("Speed:", nelahwrmspeed)
 Enemies()
->>>>>>> Enemies
