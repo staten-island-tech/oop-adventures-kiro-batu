@@ -1,8 +1,10 @@
 import random
 
-print ("When you run this code, you will get a random attack for your Infantry (15-50), random speed for your Infantry (5-40), and random health for your Infantry (10-40)")
 
 class Infantry ():
+    def rundowm():
+        print ("When you run this code, you will get a random attack for your Infantry (15-50), random speed for your Infantry (5-40), and random health for your Infantry (10-40)")
+
 
     def InfantryAttack():
         start = 15
