@@ -1,8 +1,10 @@
 import random
 
-print ("When you run this code, you will get a random attack for your archer (10-50), random speed for your archer (1-40), and random health for your archer (1-30)")
 
 class archer ():
+    def rundown():
+        print ("When you run this code, you will get a random attack for your archer (10-50), random speed for your archer (1-40), and random health for your archer (1-30)")
+
 
     def ArcherAttack():
         start = 10

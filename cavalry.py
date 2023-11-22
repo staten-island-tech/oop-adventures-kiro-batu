@@ -1,8 +1,10 @@
 import random
 
-print ("When you run this code, you will get a random attack for your Cavalry (1-40), random speed for your Cavalry (15-60), and random health for your Cavalry (1-50)")
 
 class Cavalry ():
+    def rundown():
+        print ("When you run this code, you will get a random attack for your Cavalry (1-40), random speed for your Cavalry (15-60), and random health for your Cavalry (1-50)")
+
 
     def CavalryAttack():
         start = 1
