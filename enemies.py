@@ -2,7 +2,6 @@ class Enemies ():
 
     def TheRules():
         print ("You have encountered some Enemies on your way. These Enemies only get bigger and harder to defeat. We will start off easy.")
-    TheRules()
 
     class Slimes():
         def SlimeAppear():
@@ -104,16 +103,15 @@ class Enemies ():
             print ("Health: ",hydrahealth)
             print ("Attack: ",hydraattack)
             print ("Speed: ",hydraspeed)
-        HydraAppear()
-
+            
     class nelahWrM():
-            def nelahWrMAppear():
-                input ("YOU FOUND A WILD NELAHW RM. DEFEAT HIM TO WIN! (Click enter to continue)")
-                print ("Here is the final boss' stats")
-                nelahwrmhealth = 50
-                nelahwrmattack = 50
-                nelahwrmspeed = 50
-                print ("Health:", nelahwrmhealth)
-                print ("Attack:", nelahwrmattack)
-                print ("Speed:", nelahwrmspeed)
+        def nelahWrMAppear():
+            input ("YOU FOUND A WILD NELAHW RM. DEFEAT HIM TO WIN! (Click enter to continue)")
+            print ("Here is the final boss' stats")
+            nelahwrmhealth = 50
+            nelahwrmattack = 50
+            nelahwrmspeed = 50
+            print ("Health:", nelahwrmhealth)
+            print ("Attack:", nelahwrmattack)
+            print ("Speed:", nelahwrmspeed)
 Enemies()
