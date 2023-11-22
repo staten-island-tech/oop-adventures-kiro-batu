@@ -10,7 +10,7 @@ class Infantry ():
         values = list(range(start,end))
         randomattack= random.choice(values)
         print ("Your Infantry Attack is:", randomattack)
-    InfantryAttack()
+    
 
 
     def InfantrySpeed():
@@ -19,7 +19,7 @@ class Infantry ():
         values = list(range(start,end))
         randomspeed= random.choice(values)
         print ("Your Infantry Speed is:", randomspeed)
-    InfantrySpeed()
+
 
 
     def InfantryHealth():
@@ -28,6 +28,6 @@ class Infantry ():
         values = list(range(start,end))
         randomhealth= random.choice(values)
         print ("Your Infantry Health is:", randomhealth)
-    InfantryHealth()
+    
 
 Infantry()
