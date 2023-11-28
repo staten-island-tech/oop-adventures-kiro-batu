@@ -10,12 +10,7 @@ from demblessings import Blessings
 from armor import item
 
 ##Import the enemies
-<<<<<<< HEAD
 from enemies import Enemies 
-=======
-import enemies
-print (enemies) 
->>>>>>> caa7425dfa70edc82259a5c9115b83026f6c27c3
 
 
 print ("---------")
@@ -44,4 +39,11 @@ storyline()
 def intro():
     input ("---")
     print ('The distant man was kind enough to offer these figure for his journey has long ended')
-    Archer.rundown()
+    input ("---")
+    print ("He present you the archer")
+    input ("The stats presented themselves in a magical mist")
+    input; Archer.rundown()
+    input; Archer.ArcherAttack
+    input; Archer.ArcherHealth
+    input; Archer.ArcherSpeed
+intro()
