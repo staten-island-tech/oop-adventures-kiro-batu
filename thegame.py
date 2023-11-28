@@ -1,16 +1,16 @@
 ## Import the types of troops
-import cavalry
-import archers
-import infantry
+from cavalry import Cavalry
+from archers import Archer
+from infantry import Infantry 
 
 ##Import the blessings
-import demblessings
+from demblessings import Blessings
 
 ##Import all the items
-import armor
+from armor import item
 
 ##Import the enemies
-import enemies 
+from enemies import Enemies 
 
 
 print ("---------")
@@ -37,5 +37,6 @@ def storyline():
 storyline()
 
 def intro():
-    from archers import rundown
-    return rundown
+    input ("---")
+    print ('The distant man was kind enough to offer these figure for his journey has long ended')
+    Archer.rundown()
