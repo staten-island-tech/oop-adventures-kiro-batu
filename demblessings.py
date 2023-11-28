@@ -29,7 +29,7 @@ class Blessings():
             Artemisbuff = randomnum
             print ("This charm is imbued with the agility of Hermes and it provides a boost of",Artemisbuff, "to your speed, use it wisely")
 
-Blessings()
+
 
 
 

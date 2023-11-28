@@ -114,4 +114,3 @@ class Enemies ():
             print ("Health:", nelahwrmhealth)
             print ("Attack:", nelahwrmattack)
             print ("Speed:", nelahwrmspeed)
-Enemies()

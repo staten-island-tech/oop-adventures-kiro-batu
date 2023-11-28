@@ -18,7 +18,7 @@ class item():
             randomnum = (random.choice(values))
             ShieldSpeed = randomnum
             print ("Yet this shield also makes you slower by", ShieldSpeed )
-    Shield()
+    
 
     class Boots():
         itemtype = ("Armor")
@@ -29,7 +29,7 @@ class item():
             randomnum = (random.choice(values))
             BootsSpeed=randomnum
             print ("This pair of boots provides a boost of",BootsSpeed, "to your speed")
-    Boots()
+ 
 
     class Chestplate():
         itemtype = ("Armor")
@@ -47,7 +47,7 @@ class item():
             randomnum = (random.choice(values))
             ChestplateSpeed = randomnum
             print ("Yet this chestplate also makes you slower by", ChestplateSpeed )
-    Chestplate()
+
 
     class Cloak():
         itemtype = ("Armor")
@@ -65,6 +65,6 @@ class item():
             randomnum = (random.choice(values))
             CloakSpeed = randomnum
             print ("This cloak also makes you faster by", CloakSpeed )
-    Cloak()
-item()
+   
+
 
