@@ -10,7 +10,12 @@ from demblessings import Blessings
 from armor import item
 
 ##Import the enemies
+<<<<<<< HEAD
 from enemies import Enemies 
+=======
+import enemies
+print (enemies) 
+>>>>>>> caa7425dfa70edc82259a5c9115b83026f6c27c3
 
 
 print ("---------")
