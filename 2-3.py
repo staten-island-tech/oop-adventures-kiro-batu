@@ -1,3 +1,8 @@
-import enemies
-from enemies import goblin
-print (goblin)
+from archers import archer
+
+def ArcherNum():
+    archer.rundown()
+    archer.ArcherAttack()
+    archer.ArcherHealth()
+    archer.ArcherSpeed()
+ArcherNum()
