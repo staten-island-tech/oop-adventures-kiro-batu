@@ -10,7 +10,8 @@ import demblessings
 import armor
 
 ##Import the enemies
-import enemies 
+import enemies
+print (enemies) 
 
 
 print ("---------")

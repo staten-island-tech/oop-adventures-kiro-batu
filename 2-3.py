@@ -1,3 +1,3 @@
-
-from enemies import Slimes
-print (Slimes)
+import enemies
+from enemies import goblin
+print (goblin)
