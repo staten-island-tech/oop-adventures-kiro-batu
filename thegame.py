@@ -10,7 +10,7 @@ from demblessings import Blessings
 from armor import item
 
 ##Import the enemies
-from enemies import Enemies 
+
 
 
 print ("---------")
@@ -38,12 +38,34 @@ storyline()
 
 def intro():
     input ("---")
-    print ('The distant man was kind enough to offer these figure for his journey has long ended')
+    print ('The distant man was kind enough to offer you these figure for his journey had long ended')
     input ("---")
-    print ("He present you the archer")
-    input ("The stats presented themselves in a magical mist")
-    input; Archer.rundown()
-    input; Archer.ArcherAttack
-    input; Archer.ArcherHealth
-    input; Archer.ArcherSpeed
+    print ("He presented you the Archer")
+    input ("Its stats presented themselves in a magical mist")
+    input ("---")
+    Archer.rundown()
+    Archer.ArcherAttack()
+    Archer.ArcherHealth()
+    Archer.ArcherSpeed()
+    input ("---")
+    input ("Next, he presented you the Infantry")
+    Infantry.rundowm()
+    Infantry.InfantryAttack()
+    Infantry.InfantryHealth()
+    Infantry.InfantrySpeed()
+    input ("---")
+    input ("Lastly, he presented you the Cavalry")
+    Cavalry.rundown()
+    Cavalry.CavalryAttack()
+    Cavalry.CavalryHealth()
+    Cavalry.CavalrySpeed()
 intro()
+
+def nextpart():
+    input ("---")
+    print ("You said your farwells to the distant man, as you prepared yourself for the mountainous quest you've been assigned ")
+    print ("The strange man had informed you that the first of NelahWrm's strongholds was the ominous Swampy Swamp")
+    input ("---")
+
+
+
