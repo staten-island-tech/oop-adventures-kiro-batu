@@ -1,14 +1,12 @@
-
 class Slimes():
-    def SlimeAppear():
-        input ("OH NO YOU FOUND A SLIME: (Click enter to continue) ")
-        print ("Here are his stats")
-        slimehealth = 10
-        slimeattack = 5
-        slimespeed = 0
-        print ("Health:",slimehealth)
-        print ("Attack:",slimeattack)
-        print ("Speed:",slimespeed)
+    input ("OH NO YOU FOUND A SLIME: (Click enter to continue) ")
+    print ("Here are his stats")
+    slimehealth = 10
+    slimeattack = 5
+    slimespeed = 0
+    print ("Health:",slimehealth)
+    print ("Attack:",slimeattack)
+    print ("Speed:",slimespeed)
 
 class Zombies():
     def ZombieAppear():
