@@ -10,7 +10,7 @@ from demblessings import Blessings
 from armor import item
 
 ##Import the enemies
-
+from enemies import Slimes
 
 
 print ("---------")
@@ -40,21 +40,22 @@ def intro():
     input ("---")
     print ('The distant man was kind enough to offer you these figure for his journey had long ended')
     input ("---")
-    print ("He presented you the Archer")
-    input ("Its stats presented themselves in a magical mist")
+    print ("He presented you the Archer:")
     input ("---")
     Archer.rundown()
     Archer.ArcherAttack()
     Archer.ArcherHealth()
     Archer.ArcherSpeed()
     input ("---")
-    input ("Next, he presented you the Infantry")
+    input ("Next, he presented you the Infantry:")
+    input ("---")
     Infantry.rundowm()
     Infantry.InfantryAttack()
     Infantry.InfantryHealth()
     Infantry.InfantrySpeed()
     input ("---")
-    input ("Lastly, he presented you the Cavalry")
+    input ("Lastly, he presented you the Cavalry:")
+    input ("---")
     Cavalry.rundown()
     Cavalry.CavalryAttack()
     Cavalry.CavalryHealth()
@@ -66,6 +67,16 @@ def nextpart():
     print ("You said your farwells to the distant man, as you prepared yourself for the mountainous quest you've been assigned ")
     print ("The strange man had informed you that the first of NelahWrm's strongholds was the ominous Swampy Swamp")
     input ("---")
+    print ("As you approached the dark swamp a feeling of immense dread overcame you")
+    print ("The power of NelahWrm was oozing all over")
+    input ("---")
+    print ("As you entered the swamp the thick substance clinged to your legs dragging you down in the process")
+    print ("---")
+    print ("As you suffered with each step the first of NelahWrm's servants emerged from the swamp, The SLIME.")
+nextpart()
 
+def firstbattle():
+    Slimes.SlimeAppear()
+firstbattle()
 
 
