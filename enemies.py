@@ -1,21 +1,16 @@
-
-
-def TheRules():
-    print ("You have encountered some Enemies on your way. These Enemies only get bigger and harder to defeat. We will start off easy.")
-    
 class Slimes():
-    def SlimeAppear():
         input ("OH NO YOU FOUND A SLIME: (Click enter to continue) ")
         print ("Here are his stats")
         slimehealth = 10
         slimeattack = 5
         slimespeed = 0
-        print ("Health:",slimehealth)
-        print ("Attack:",slimeattack)
-        print ("Speed:",slimespeed)
+        print ("Health: ", slimeattack)
+        print ("Attack: ", slimeattack)
+        print ("Speed: ", slimespeed)
+
+
 
 class Zombies():
-    def ZombieAppear():
         input ("OH NO YOU FOUND A ZOMBIE: (Click enter to continue) ")
         print ("Here are his stats")
         zombiehealth = 0
@@ -26,7 +21,6 @@ class Zombies():
         print ("Speed:",zombiespeed)
 
 class Goblins():
-    def GoblinAppear():
         input ("OH NO YOU FOUND A GOBLIN: (Click enter to continue) ")
         print ("Here are his stats")
         goblinhealth = 10
@@ -37,7 +31,6 @@ class Goblins():
         print ("Speed: ",goblinspeed)
 
 class Skeleton():
-    def SkeletonAppear():
         input ("OH NO YOU FOUND A SKELETON: (Click enter to continue) ")
         print ("Here are his stats")
         skeletonhealth = 10
@@ -48,7 +41,6 @@ class Skeleton():
         print ("Speed: ",skeletonspeed)
 
 class Minotaur():
-    def MinotaurAppear():
         input ("Now this will be your first real test: (Click enter to continue) ")
         input ("OH NO YOU FOUND A MINOTAUR (Click enter to continue)")
         print ("Here are his stats")
@@ -58,8 +50,8 @@ class Minotaur():
         print ("Health: ",minotaurhealth)
         print ("Attack: ",minotaurattack)
         print ("Speed: ",minotaurspeed)
+
 class Cyclops():
-    def CyclopsAppear():
         input ("OH NO YOU FOUND A CYCLOPS (Click enter to continue)")
         print ("Here are his stats")
         cyclopshealth = 25
@@ -70,7 +62,6 @@ class Cyclops():
         print ("Speed: ",cyclopsspeed)
 
 class GiantSpider():
-    def GiantSpiderAppear():
         input ("OH NO YOU FOUND A GIANT SPIDER (Click enter to continue)")
         print ("Here are his stats")
         giantspiderhealth = 20 
@@ -79,8 +70,8 @@ class GiantSpider():
         print ("Health: ",giantspiderhealth)
         print ("Attack: ",giantspiderattack)
         print ("Speed: ",giantspiderspeed)
+
 class Yeti():
-    def YetiAppear():
         input ("OH NO YOU FOUND A YETI (Click enter to continue)")
         print ("Here are his stats")
         yetihealth = 30
@@ -91,7 +82,6 @@ class Yeti():
         print ("Speed: ",yetispeed)
 
 class Hydra():
-    def HydraAppear():
         input ("OH NO YOU FOUND A HYDRA (Click enter to continue)")
         print ("Here are his stats")
         hydrahealth = 40
@@ -102,7 +92,6 @@ class Hydra():
         print ("Speed: ",hydraspeed)
         
 class nelahWrM():
-    def nelahWrMAppear():
         input ("YOU FOUND A WILD NELAHW RM. DEFEAT HIM TO WIN! (Click enter to continue)")
         print ("Here is the final boss' stats")
         nelahwrmhealth = 50

@@ -26,3 +26,4 @@ class Archer ():
         randomhealth= random.choice(values)
         print ("- Your Archer Health is:", randomhealth)
     
+print (Archer.ArcherAttack)

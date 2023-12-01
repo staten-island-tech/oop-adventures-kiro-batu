@@ -27,3 +27,4 @@ class Infantry ():
         print ("- Your Infantry Health is:", randomhealth)
     
 
+Infantry.InfantryAttack()

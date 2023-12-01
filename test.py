@@ -1,3 +1,5 @@
 from archers import Archer
+from enemies import Slimes
 
-print (Archer.ArcherAttack)
+Archer.ArcherAttack()
+Slimes.slimeattack()
