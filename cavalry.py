@@ -30,4 +30,5 @@ class Cavalry ():
         randomhealth= random.choice(values)
         print ("Your Cavalry Health is:", randomhealth)
 
-Cavalry()
+
+        

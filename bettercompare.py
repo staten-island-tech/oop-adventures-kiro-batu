@@ -15,11 +15,4 @@ from enemies import Cyclops
 from enemies import Hydra
 from enemies import nelahWrM
 
-def compareArcher():
-    print ("Here is the Slime's Attack: ", Slimes.slimeattack)
-    print ("Here is the Archer's Attack: ", Archer.ArcherAttack)
-    if Slimes.slimeattack < Archer.ArcherAttack:
-        print ("You won the stat")
-compareArcher()
-
-print (Archer.ArcherAttack)
+Archer.ArcherAttack()
