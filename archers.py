@@ -30,5 +30,3 @@ class Archer ():
         print ("Your Archer Health is:", randomhealth)
         archerhealth = randomhealth
     
-
-
