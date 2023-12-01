@@ -1,6 +1,5 @@
 import random
 
-
 class Blessings():
     class Hercules():
         def Defensebuff():

@@ -1,6 +1,5 @@
 import random 
 
-
 class item():
     class Shield():
         itemtype = ("Armor")
