@@ -76,7 +76,7 @@ def nextpart():
 nextpart()
 
 def firstbattle():
-    Slimes.SlimeAppear()
+    Slimes.slimesappear()
 firstbattle()
 
 
