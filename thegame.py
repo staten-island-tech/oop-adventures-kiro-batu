@@ -10,7 +10,7 @@ from demblessings import Blessings
 from armor import item
 
 ##Import the enemies
-from enemies import Slimes
+
 
 
 print ("---------")
@@ -83,8 +83,7 @@ def nextpart():
     print ("As you suffered with each step the first of NelahWrm's servants emerged from the swamp, The SLIME.")
 nextpart()
 
-def firstbattle():
-    Slimes.slimesappear()
-firstbattle()
+
+
 
 
