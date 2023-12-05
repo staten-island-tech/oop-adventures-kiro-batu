@@ -9,7 +9,7 @@ class Archer ():
         end = 50 
         values = list(range(start,end))
         randomattack= random.choice(values)
-        print ("- Your Archer Attack is:", randomattack)\
+        print ("- Your Archer Attack is:", randomattack)
         archerattack = randomattack
     
     def ArcherSpeed():
