@@ -8,7 +8,7 @@ class Slimes():
                 print ("Health: ", slimeattack)
                 print ("Attack: ", slimeattack)
                 print ("Speed: ", slimespeed)
-
+   
 class Zombies():
         def zombieappear():
                 input ("OH NO YOU FOUND A ZOMBIE: (Click enter to continue) ")

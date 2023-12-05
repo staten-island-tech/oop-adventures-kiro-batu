@@ -10,6 +10,7 @@ class Cavalry ():
         values = list(range(start,end))
         randomattack= random.choice(values)
         print ("Your Cavalry Attack is:", randomattack)
+        cavalryattack = randomattack
 
     def CavalrySpeed():
         start = 15
@@ -17,6 +18,7 @@ class Cavalry ():
         values = list(range(start,end))
         randomspeed= random.choice(values)
         print ("Your Cavalry Speed is:", randomspeed)
+        cavalryspeed = randomspeed
 
     def CavalryHealth():
         start = 1
@@ -24,5 +26,6 @@ class Cavalry ():
         values = list(range(start,end))
         randomhealth= random.choice(values)
         print ("Your Cavalry Health is:", randomhealth)
+        cavalry = randomhealth
 
 
