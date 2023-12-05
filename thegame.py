@@ -10,7 +10,7 @@ from demblessings import Blessings
 from armor import item
 
 ##Import the enemies
-
+from theennemies import Skeleton
 
 
 print ("---------")
@@ -87,3 +87,4 @@ nextpart()
 
 
 
+print (Skeleton.attack)
