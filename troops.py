@@ -7,21 +7,59 @@ class troops:
         self.speed = speed
         self.health = health
 
+#for the archers
 start = 10
 end = 50 
 values = list(range(start,end))
-archerrandomattack= random.choice(values)
+archer_randomattack= random.choice(values)
 
 start = 1
 end = 40
 values = list(range(start,end))
-archerrandomspeed= random.choice(values)
+archer_randomspeed= random.choice(values)
 
 start = 1
 end = 30
 values = list(range(start,end))
-archerrandomhealth= random.choice(values)
+archer_randomhealth= random.choice(values)
 
-Archer = troops ('Archers', archerrandomattack, archerrandomspeed, archerrandomhealth)
+#for the infantry
+start = 15
+end = 50
+values = list(range(start,end))
+infantry_randomattack= random.choice(values)
 
-print (Archer.attack)
+start = 5
+end = 40
+values = list(range(start,end))
+infantry_randomspeed= random.choice(values)
+
+start = 10
+end = 40
+values = list(range(start,end))
+infantry_randomhealth= random.choice(values)
+
+#for the cavalry
+start = 1
+end = 40 
+values = list(range(start,end))
+randomattack= random.choice(values)
+cavalry_randomattack = random.choice(values)
+
+start = 15
+end = 60
+values = list(range(start,end))
+randomspeed= random.choice(values)
+cavalry_randomspeed = random.choice(values)
+
+start = 1
+end = 50
+values = list(range(start,end))
+randomhealth= random.choice(values)
+cavalry_randomhealth = random.choice(values)
+
+Archer = troops ('Archers', archer_randomattack, archer_randomspeed, archer_randomhealth)
+Infantry = troops ('Infantry', infantry_randomattack, infantry_randomspeed, infantry_randomhealth)
+Cavalry = troops ('Cavalry', cavalry_randomattack,cavalry_randomspeed,cavalry_randomhealth)
+
+print (Archer.attack, Infantry.speed, Cavalry.health)
