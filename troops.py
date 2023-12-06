@@ -60,6 +60,6 @@ cavalry_randomhealth = random.choice(values)
 
 Archer = troops ('Archers', archer_randomattack, archer_randomspeed, archer_randomhealth)
 Infantry = troops ('Infantry', infantry_randomattack, infantry_randomspeed, infantry_randomhealth)
-Cavalry = troops ('Cavalry', cavalry_randomattack,cavalry_randomspeed,cavalry_randomhealth)
+Cavalry = troops ('Cavalry', cavalry_randomattack, cavalry_randomspeed, cavalry_randomhealth)
 
-print (Archer.attack, Infantry.speed, Cavalry.health)
+print (Archer.attack)
