@@ -1,16 +1,21 @@
 ## Import the types of troops
-from cavalry import Cavalry
-from archers import Archer
-from infantry import Infantry 
+from troops import Cavalry
+from troops import Archer
+from troops import Infantry 
 
 ##Import the blessings
-from demblessings import Blessings
+from demblessings import Hercules
+from demblessings import Hermes
+from demblessings import Artemis
 
 ##Import all the items
-from armor import item
+from armor import Shield
+from armor import Boots
+from armor import Cloak
+from armor import Chestplate
 
 ##Import the enemies
-from theennemies import Skeleton
+
 
 
 print ("---------")
@@ -48,26 +53,26 @@ def intro():
     input ("---")
     print ('The distant man was kind enough to offer you these figure for his journey had long ended')
     input ("---")
-    print ("He presented you the Archer:")
+    input ("He presented you the Archer:")
     input ("---")
-    Archer.rundown()
-    Archer.ArcherAttack()
-    Archer.ArcherHealth()
-    Archer.ArcherSpeed()
+    print ("The figure presented you a random attack (10 - 50), a random speed (1 - 40), and a random health (1 - 40)")
+    print ("- Attack: ", Archer.attack)
+    print ("- Speed: ", Archer.speed )
+    print ("- Health: ", Archer.health)
     input ("---")
     input ("Next, he presented you the Infantry:")
     input ("---")
-    Infantry.rundowm()
-    Infantry.InfantryAttack()
-    Infantry.InfantryHealth()
-    Infantry.InfantrySpeed()
+    print ("The figure presented you a random attack (15 - 50), a random speed (5 - 40), and a random health (10 - 40)")
+    print ("- Attack: ", Infantry.attack)
+    print ("- Speed: ", Infantry.speed )
+    print ("- Health: ", Infantry.health)
     input ("---")
     input ("Lastly, he presented you the Cavalry:")
     input ("---")
-    Cavalry.rundown()
-    Cavalry.CavalryAttack()
-    Cavalry.CavalryHealth()
-    Cavalry.CavalrySpeed()
+    print ("The figure presented you a random attack (1 - 40), a random speed (15 - 60), and a random health (1 - 50)")
+    print ("- Attack: ", Cavalry.attack)
+    print ("- Speed: ", Cavalry.speed )
+    print ("- Health: ", Cavalry.health)
 intro()
 
 def nextpart():
@@ -86,5 +91,3 @@ nextpart()
 
 
 
-
-print (Skeleton.attack)
