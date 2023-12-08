@@ -1,9 +1,10 @@
 class Enemies:
-    def __init__ (self, name, attack, health, speed):
+    def __init__(self, name, attack, health, speed):
         self.name = name
         self.attack = attack
         self.health = health
         self.speed = speed
+
 
 Slime = Enemies ('Slime', 5, 10, 0)
 Zombie = Enemies ('Zombie', 10, 0, 5)
@@ -15,5 +16,3 @@ GiantSpider = Enemies ('Giant Spider', 25, 20, 30)
 Yeti = Enemies ('Yeti', 30, 30, 15)
 Hydra = Enemies ('Hydra', 40, 40, 40)
 nelahWrM = Enemies ('nelahWrM', 50, 50, 50)
-
-print (nelahWrM.attack)
