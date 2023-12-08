@@ -15,6 +15,21 @@ from armor import Cloak
 from armor import Chestplate
 
 ##Import the enemies
+from enemies import Slime
+from enemies import Skeleton
+from enemies import Zombie
+from enemies import Goblin
+from enemies import Minotaur
+from enemies import Cyclops
+from enemies import GiantSpider
+from enemies import Yeti
+from enemies import Hydra
+from enemies import nelahWrM
+
+
+##Variables
+trooplist = (Cavalrys, Archers, Troops)
+aiinput 
 
 
 
@@ -87,6 +102,18 @@ def nextpart():
     print ("---")
     print ("As you suffered with each step the first of NelahWrm's servants emerged from the swamp, The SLIME.")
 nextpart()
+
+def firstbattle():
+    input ("---")
+    input ("You've encountered a devilish SLIME")
+    print ("The SLIME's attack stat is", Slime.attack)
+    print ("The SLIME's health stat is", Slime.health)
+    print ("The SLIME's speed stat is", Slime.speed)
+    input ('---')
+    
+
+    
+
 
 
 
