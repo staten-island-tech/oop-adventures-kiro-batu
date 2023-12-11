@@ -28,8 +28,9 @@ from enemies import nelahWrM
 
 
 ##Variables
-trooplist = (Cavalrys, Archers, Troops)
-aiinput 
+trooplist = (Cavalry, Archer, Infantry )
+troopinput = ("")
+
 
 
 
