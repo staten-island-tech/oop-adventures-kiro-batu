@@ -2,8 +2,10 @@ from troops import Archer
 from enemies import Slime
 from enemies import Skeleton
 
+print ("Dont worry about the number above")
+
 def Slime():
-    
+
     print ("You have found a Slime. Good luck")
     
     input ("---")
@@ -54,9 +56,8 @@ def Slime():
         if len(slime_list) > 1:
             print ("You have beaten the Slime, good luck on your next boss")
         else:
-            print ("You have died. Try Again by rerunning the code.")
+            print ("You have died. Start Over by rerunning the code.")
     slime_winny()
-Slime()
 
 
 
@@ -113,3 +114,4 @@ def Skeleton():
             print ("You have beaten the skeleton, good luck on your next boss")
         else:
             print ("You have died. Try Again by rerunning the code.")
+Skeleton()
