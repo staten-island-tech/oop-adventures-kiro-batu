@@ -111,7 +111,7 @@ def firstbattle():
     print ("The SLIME's health stat is", Slime.health)
     print ("The SLIME's speed stat is", Slime.speed)
     input ('---')
-    
+firstbattle()
 
     
 
