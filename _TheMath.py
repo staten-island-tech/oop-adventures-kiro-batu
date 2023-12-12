@@ -58,7 +58,7 @@ def Slime():
         else:
             print ("You have died. Start Over by rerunning the code.")
     slime_winny()
-
+Slime()
 
 
 def Skeleton():
@@ -114,4 +114,3 @@ def Skeleton():
             print ("You have beaten the skeleton, good luck on your next boss")
         else:
             print ("You have died. Try Again by rerunning the code.")
-Skeleton()
