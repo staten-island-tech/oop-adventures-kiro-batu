@@ -1,64 +1,64 @@
 from troops import Archer
-from enemies import Slime
 from enemies import Skeleton
+
 
 print ("Dont worry about the number above")
 
-def Slime():
+def Goblin():
 
-    print ("You have found a Slime. Good luck")
+    print ("You have found a Goblin. Good luck")
     
     input ("---")
     
-    print ("Here is The Slime's attack", Slime.attack)
+    print ("Here is The Goblin's attack", Goblin.attack)
     print ("Here are your Archers attack", Archer.attack)
     
-    slime_list = []
+    goblin_list = []
     
-    def compare_slime_attack():
-        if Archer.attack > Slime.attack:
+    def compare_goblin_attack():
+        if Archer.attack > Goblin.attack:
             print ("You have won this stat, move on to the next.")
-            slime_list.append ("1")
+            goblin_list.append ("1")
         else:
             print ("You lost for this stat, good luck in the next")
-    compare_slime_attack()
+    compare_goblin_attack()
     
     input ("---")
     
-    print ("Here is The Slime's health", Slime.health)
+    print ("Here is The Goblin's health", Goblin.health)
     print ("Here are your Archers health", Archer.health) 
     
-    def compare_slime_health():
-        if Archer.health > Slime.health:
+    def compare_goblin_health():
+        if Archer.health > Goblin.health:
             print ("You have won this stat, move on to the next.")
-            slime_list.append ("1")
+            goblin_list.append ("1")
         else:
             print ("You lost for this stat, good luck in the next")
-    compare_slime_health()
+    compare_goblin_health()
     
     input ("---")
     
-    print ("Here is The Slime's speed", Slime.speed)
+    print ("Here is The Goblin's speed", Goblin.speed)
     print ("Here are your Archers speed", Archer.speed) 
     
     
-    def compare_slime_speed():
-        if Archer.speed > Slime.speed:
+    def compare_goblin_speed():
+        if Archer.speed > Goblin.speed:
             print ("You have won this stat, move on to the next.")
-            slime_list.append ("1")
+            goblin_list.append ("1")
         else:
             print ("You lost for this stat, good luck in the next")
-    compare_slime_speed()
+    compare_goblin_speed()
     
     input ("---")
     
-    def slime_winny():
-        if len(slime_list) > 1:
-            print ("You have beaten the Slime, good luck on your next boss")
+    def goblin_winny():
+        if len(goblin_list) > 1:
+            print ("You have beaten the Goblin, good luck on your next boss")
         else:
             print ("You have died. Start Over by rerunning the code.")
-    slime_winny()
-Slime()
+    goblin_winny()
+
 
 
 def Skeleton():
@@ -114,3 +114,4 @@ def Skeleton():
             print ("You have beaten the skeleton, good luck on your next boss")
         else:
             print ("You have died. Try Again by rerunning the code.")
+Skeleton()
