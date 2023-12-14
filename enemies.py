@@ -5,6 +5,7 @@ class Enemies:
         self.health = health
         self.speed = speed
 
+
 Slime = Enemies ('Slime', 5, 5, 0)
 Zombie = Enemies ('Zombie', 10, 0, 5)
 Goblin = Enemies ('Goblin', 10, 10, 10)
@@ -16,4 +17,4 @@ Yeti = Enemies ('Yeti', 30, 30, 15)
 Hydra = Enemies ('Hydra', 40, 40, 40)
 nelahWrM = Enemies ('nelahWrM', 50, 50, 50)
 
-Slime.health()
+print (Slime.attack)
