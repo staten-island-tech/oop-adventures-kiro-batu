@@ -29,7 +29,11 @@ from enemies import nelahWrM
 
 ##Variables
 trooplist = (Cavalry, Archer, Infantry )
-troopinput = ("")
+troopinput = ("Select a troop to send out into battle")
+
+def picky():
+    if troopinput == (Cavalry):
+        print("You have selected the ")
 
 
 
@@ -112,10 +116,3 @@ def firstbattle():
     print ("The SLIME's speed stat is", Slime.speed)
     input ('---')
 firstbattle()
-
-    
-
-
-
-
-
