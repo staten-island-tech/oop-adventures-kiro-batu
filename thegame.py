@@ -28,12 +28,35 @@ from enemies import nelahWrM
 
 
 ##Variables
-trooplist = (Cavalry, Archer, Infantry )
-troopinput = ("Select a troop to send out into battle")
+trooplist = ["Cavalry", "Archer", "Infantry" ]
 
 def picky():
-    if troopinput == (Cavalry):
-        print("You have selected the ")
+    troopinput = input("Select a troop type to send out into battle: ")
+    print("---")
+    if troopinput == ("Cavalry"):
+        print("You have selected the Cavalry: your current stats will be printed ")
+        print ("- Attack: ", Cavalry.attack)
+        print ("- Speed: ", Cavalry.speed )
+        print ("- Health: ", Cavalry.health)
+    elif troopinput == ("Archer"):
+        print("You have selected the Archer: your current stats will be printed ")
+        print ("- Attack: ", Archer.attack)
+        print ("- Speed: ", Archer.speed )
+        print ("- Health: ", Archer.health)
+    if troopinput == ("Infantry"):
+        print("You have selected the Infantry: your current stats will be printed ")
+        print ("- Attack: ", Infantry.attack)
+        print ("- Speed: ", Infantry.speed )
+        print ("- Health: ", Infantry.health)
+    
+
+def base_arena():
+    start = 1
+    end = 3
+    values = list(range(start,end))
+     
+
+
 
 
 
@@ -47,7 +70,7 @@ input ("---------")
 def storyline():
     print ("The world has been run over by the overlord NelahWrM and his monstrous forces")
     print ("Many have suffered under his evil rule")
-    print ("The poor continue to be oppressed in live in destitute situations")
+    print ("The poor continue to be oppressed as they live their destitute lives")
     print ("Yet the wealthy live in luxury ")
     input ("---")
     print ("Many have attempted to revolt against NelahWrM")
@@ -115,4 +138,5 @@ def firstbattle():
     print ("The SLIME's health stat is", Slime.health)
     print ("The SLIME's speed stat is", Slime.speed)
     input ('---')
+    picky()
 firstbattle()
