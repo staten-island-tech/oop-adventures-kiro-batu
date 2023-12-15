@@ -49,13 +49,77 @@ def vs_slime():
             print ("You have lost in this stat, better luck in the next one.")
     compare_archerspeed_slime()
 
+    input ("---")
+
     def slime_winny():
         if len(slime_listy) > 1:
             print ("You have beaten the Slime, good luck on your next boss")
         else:
             print ("You have died. Start Over by rerunning the code.")
     slime_winny()
-vs_slime()
+
+
+
+
+
+
+def vs_zom():
+
+    print ("You have found a Zombie, good luck in this battle")
+
+    zom_listy = []
+
+    input ("---")
+
+    print ("Here is your Archer's attack:", Archer.attack)
+    print ("Here is the Zombie's Attack:", Zombie.attack)
+
+    def compare_archerattack_zom():
+        if Archer.attack > Zombie.attack:
+            print ("You have won in this stat, good luck in the next.")
+            zom_listy.append("1")
+        else:
+            print ("You have lost in this stat, better luck in the next one.")
+    compare_archerattack_zom()
+
+    input ("---")
+
+    print ("Here is your Archer's health:", Archer.health)
+    print ("Here is the Slime's health:", Slime.health)
+
+    def compare_archerhealth_zom():
+        if Archer.speed > Slime.speed:
+            print ("You have won in this stat, good luck in the next.")
+            zom_listy.append ("1")
+        else:
+            print ("You have lost in this stat, better luck in the next one.")
+    compare_archerhealth_zom()
+
+    input ("---")
+
+    print ("Here is your Archer's speed:", Archer.speed)
+    print ("Here is the Zombie's speed:", Zombie.speed)
+
+    def compare_archerspeed_zom():
+        if Archer.speed > Zombie.speed:
+            print ("You have won in this stat, good luck in the next.")
+            zom_listy.append ("1")
+        else:
+            print ("You have lost in this stat, better luck in the next one.")
+    compare_archerspeed_zom()
+
+    input ("---")
+
+    def zom_winny():
+        if len(zom_listy) > 1:
+            print ("You have beaten the Zombie, good luck on your next boss")
+        else:
+            print ("You have died. Start Over by rerunning the code.")
+    zom_winny()
+
+
+
+
 
 def vs_Gob():
 
@@ -97,10 +161,10 @@ def vs_Gob():
     
     def compare_goblin_speed():
         if Archer.speed > Goblin.speed:
-            print ("You have won this stat, move on to the next.")
+            print ("You have won this stat, your fate will be revealed.")
             goblin_list.append ("1")
         else:
-            print ("You lost for this stat, good luck in the next")
+            print ("You lost for this stat, your fate will be revealed.")
     compare_goblin_speed()
     
     input ("---")
@@ -168,3 +232,237 @@ def vs_Skele():
         else:
             print ("You have died. Try Again by rerunning the code.")
     skele_winny()
+
+
+
+
+
+def vs_Min():
+
+    print ("You have found a Minotaur. Good luck")
+
+    input ("---")
+
+    print ("Here is The Minotaur's attack", Minotaur.attack)
+    print ("Here are your Archers attack", Archer.attack)
+
+    min_list = []
+
+    def compare_min_attack():
+        if Archer.attack > Minotaur.attack:
+            print ("You have won this stat, move on to the next.")
+            min_list.append ("1")
+        else:
+            print ("You lost for this stat, good luck in the next")
+    compare_min_attack()
+
+    input ("---")
+
+    print ("Here is The Minotaur's health", Minotaur.health)
+    print ("Here are your Archers health", Archer.health) 
+
+    def compare_min_health():
+        if Archer.health > Minotaur.health:
+            print ("You have won this stat, move on to the next.")
+            min_list.append ("1")
+        else: 
+            print ("You lost for this stat, good luck in the next")
+    compare_min_health()
+
+    input ("---")
+
+    print ("Here is The Minotaur's speed", Minotaur.speed)
+    print ("Here are your Archers speed", Archer.speed) 
+
+
+    def compare_min_speed():
+        if Archer.speed > Minotaur.speed:
+            print ("You have won this stat, your fate will be revealed.")
+            min_list.append ("1")
+        else:
+            print ("You lost for this stat, your fate will be revealed")
+    compare_min_speed()
+
+    input ("---")
+
+    def min_winny():
+        if len(min_list) > 1:
+            print ("You have beaten the Minotaur, good luck on your next boss")
+        else:
+            print ("You have died. Try Again by rerunning the code.")
+    min_winny()
+
+
+
+def vs_Cyc():
+
+    print ("You have found a Cyclops. Good luck")
+
+    input ("---")
+
+    print ("Here is The Cyclops's attack", Cyclops.attack)
+    print ("Here are your Archers attack", Archer.attack)
+
+    cyc_list = []
+
+    def compare_cyc_attack():
+        if Archer.attack > Cyclops.attack:
+            print ("You have won this stat, move on to the next.")
+            cyc_list.append ("1")
+        else:
+            print ("You lost for this stat, good luck in the next")
+    compare_cyc_attack()
+
+    input ("---")
+
+    print ("Here is The Cyclops's health", Cyclops.health)
+    print ("Here are your Archers health", Archer.health) 
+
+    def compare_cyc_health():
+        if Archer.health > Cyclops.health:
+            print ("You have won this stat, move on to the next.")
+            cyc_list.append ("1")
+        else: 
+            print ("You lost for this stat, good luck in the next")
+    compare_cyc_health()
+
+    input ("---")
+
+    print ("Here is The Cyclops's speed", Cyclops.speed)
+    print ("Here are your Archers speed", Archer.speed) 
+
+
+    def compare_cyc_speed():
+        if Archer.speed > Cyclops.speed:
+            print ("You have won this stat, your fate will be revealed.")
+            cyc_list.append ("1")
+        else:
+            print ("You lost for this stat, your fate will be revealed")
+    compare_cyc_speed()
+
+    input ("---")
+
+    def cyc_winny():
+        if len(cyc_list) > 1:
+            print ("You have beaten the Cyclops, good luck on your next boss")
+        else:
+            print ("You have died. Try Again by rerunning the code.")
+    cyc_winny()
+
+
+
+
+
+def vs_GS():
+
+    print ("You have found a Giant Spider. Good luck")
+
+    input ("---")
+
+    print ("Here is The Giant Spider's attack", GiantSpider.attack)
+    print ("Here are your Archers attack", Archer.attack)
+
+    GS_list = []
+
+    def compare_GS_attack():
+        if Archer.attack > GiantSpider.attack:
+            print ("You have won this stat, move on to the next.")
+            GS_list.append ("1")
+        else:
+            print ("You lost for this stat, good luck in the next")
+    compare_GS_attack()
+
+    input ("---")
+
+    print ("Here is The Giant Spider's health", GiantSpider.health)
+    print ("Here are your Archers health", Archer.health) 
+
+    def compare_GS_health():
+        if Archer.health > GiantSpider.health:
+            print ("You have won this stat, move on to the next.")
+            GS_list.append ("1")
+        else: 
+            print ("You lost for this stat, good luck in the next")
+    compare_GS_health()
+
+    input ("---")
+
+    print ("Here is The Giant Spider's speed", GiantSpider.speed)
+    print ("Here are your Archers speed", Archer.speed) 
+
+
+    def compare_GS_speed():
+        if Archer.speed > GiantSpider.speed:
+            print ("You have won this stat, your fate will be revealed.")
+            GS_list.append ("1")
+        else:
+            print ("You lost for this stat, your fate will be revealed")
+    compare_GS_speed()
+
+    input ("---")
+
+    def GS_winny():
+        if len(GS_list) > 1:
+            print ("You have beaten the Giant Spider, good luck on your next boss")
+        else:
+            print ("You have died. Try Again by rerunning the code.")
+    GS_winny()
+
+
+
+
+def vs_ye():
+
+    print ("You have found a Yeti. Good luck")
+
+    input ("---")
+
+    print ("Here is The Yeti's attack", Yeti.attack)
+    print ("Here are your Archers attack", Archer.attack)
+
+    ye_list = []
+
+    def compare_ye_attack():
+        if Archer.attack > Yeti.attack:
+            print ("You have won this stat, move on to the next.")
+            ye_list.append ("1")
+        else:
+            print ("You lost for this stat, good luck in the next")
+    compare_ye_attack()
+
+    input ("---")
+
+    print ("Here is The Yeti's health", Yeti.health)
+    print ("Here are your Archers health", Archer.health) 
+
+    def compare_ye_health():
+        if Archer.health > Yeti.health:
+            print ("You have won this stat, move on to the next.")
+            ye_list.append ("1")
+        else: 
+            print ("You lost for this stat, good luck in the next")
+    compare_ye_health()
+
+    input ("---")
+
+    print ("Here is The Yeti's speed", Yeti.speed)
+    print ("Here are your Archers speed", Archer.speed) 
+
+
+    def compare_ye_speed():
+        if Archer.speed > Yeti.speed:
+            print ("You have won this stat, your fate will be revealed.")
+            ye_list.append ("1")
+        else:
+            print ("You lost for this stat, your fate will be revealed")
+    compare_ye_speed()
+
+    input ("---")
+
+    def ye_winny():
+        if len(ye_list) > 1:
+            print ("You have beaten the Yeti, good luck on your next boss")
+        else:
+            print ("You have died. Try Again by rerunning the code.")
+    ye_winny()
+vs_ye()
