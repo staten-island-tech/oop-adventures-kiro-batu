@@ -72,5 +72,3 @@ CloakSpeed = randomnum
 
 Cloak = drops ("Cloak", Cloaktype, CloakHealth, CloakSpeed )
 
-print (Cloak)
-

@@ -580,4 +580,3 @@ def vs_wrm():
         else:
             print ("You have died. Try Again by rerunning the code.")
     wrm_winny()
-vs_wrm()
