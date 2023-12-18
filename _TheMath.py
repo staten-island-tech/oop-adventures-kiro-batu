@@ -465,4 +465,119 @@ def vs_ye():
         else:
             print ("You have died. Try Again by rerunning the code.")
     ye_winny()
-vs_ye()
+
+
+
+def vs_hyd():
+
+    print ("You have found a Hydra. Good luck")
+
+    input ("---")
+
+    print ("Here is The Hydra's attack", Hydra.attack)
+    print ("Here are your Archers attack", Archer.attack)
+
+    hyd_list = []
+
+    def compare_hyd_attack():
+        if Archer.attack > Hydra.attack:
+            print ("You have won this stat, move on to the next.")
+            hyd_list.append ("1")
+        else:
+            print ("You lost for this stat, good luck in the next")
+    compare_hyd_attack()
+
+    input ("---")
+
+    print ("Here is The Hydra's health", Hydra.health)
+    print ("Here are your Archers health", Archer.health) 
+
+    def compare_hyd_health():
+        if Archer.health > Hydra.health:
+            print ("You have won this stat, move on to the next.")
+            hyd_list.append ("1")
+        else: 
+            print ("You lost for this stat, good luck in the next")
+    compare_hyd_health()
+
+    input ("---")
+
+    print ("Here is The Hydra's speed", Hydra.speed)
+    print ("Here are your Archers speed", Archer.speed) 
+
+
+    def compare_hyd_speed():
+        if Archer.speed > Hydra.speed:
+            print ("You have won this stat, your fate will be revealed.")
+            hyd_list.append ("1")
+        else:
+            print ("You lost for this stat, your fate will be revealed")
+    compare_hyd_speed()
+
+    input ("---")
+
+    def hyd_winny():
+        if len(hyd_list) > 1:
+            print ("You have beaten the Yeti, good luck on your next boss")
+        else:
+            print ("You have died. Try Again by rerunning the code.")
+    hyd_winny()
+
+
+
+
+def vs_wrm():
+
+    print ("You have found THE nelahWrM. This is the final boss. Good luck")
+
+    input ("---")
+
+    print ("Here is The nelahWrM's attack", nelahWrM.attack)
+    print ("Here are your Archers attack", Archer.attack)
+
+    wrm_list = []
+
+    def compare_wrm_attack():
+        if Archer.attack > nelahWrM.attack:
+            print ("You have won this stat, move on to the next.")
+            wrm_list.append ("1")
+        else:
+            print ("You lost for this stat, good luck in the next")
+    compare_wrm_attack()
+
+    input ("---")
+
+    print ("Here is The nelahWrM's health", nelahWrM.health)
+    print ("Here are your Archers health", Archer.health) 
+
+    def compare_wrm_health():
+        if Archer.health > nelahWrM.health:
+            print ("You have won this stat, move on to the next.")
+            wrm_list.append ("1")
+        else: 
+            print ("You lost for this stat, good luck in the next")
+    compare_wrm_health()
+
+    input ("---")
+
+    print ("Here is The nelahWrM's speed", nelahWrM.speed)
+    print ("Here are your Archers speed", Archer.speed) 
+
+
+    def compare_wrm_speed():
+        if Archer.speed > Hydra.speed:
+            print ("You have won this stat, your fate will be revealed.")
+            wrm_list.append ("1")
+        else:
+            print ("You lost for this stat, your fate will be revealed")
+    compare_wrm_speed()
+
+    input ("---")
+
+    def wrm_winny():
+        if len(wrm_list) > 1:
+            print ("You have beaten the Yeti, good luck on your next boss")
+        else:
+            print ("You have died. Try Again by rerunning the code.")
+    wrm_winny()
+vs_wrm()
