@@ -77,6 +77,12 @@ def base_arena():
         print (Goblin.health)
     
 def firstboss():
+    start = 1
+    end = 3
+    values = list(range(start,end))
+    choice = random.choice(values)
+
+
     print ("You've encountered your first BOSS, the mighty MINOTAUR")
     print ("---")
     print (Minotaur.attack)
