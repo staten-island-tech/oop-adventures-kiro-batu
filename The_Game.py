@@ -2,15 +2,18 @@
 from troops import Cavalry
 from troops import Archer
 from troops import Infantry 
-##Import the blessings
 
+##Import the blessings
+from the_blessings import Hercules
 from the_blessings import Hermes
 from the_blessings import Artemis
+
 ##Import all the items
 from the_armor import Shield
 from the_armor import Boots
 from the_armor import Cloak
 from the_armor import Chestplate
+
 ##Import the enemies
 from enemies import Slime
 from enemies import Skeleton
@@ -23,13 +26,13 @@ from enemies import Yeti
 from enemies import Hydra
 from enemies import nelahWrM
 
-trooplist = (Cavalry, Archer, Infantry )
-troopinput = ("Select a troop to send out into battle")
+
+##Variables
+import random
+
 trooplist = ["Cavalry", "Archer", "Infantry" ]
 
 def picky():
-    if troopinput == (Cavalry):
-        print("You have selected the ")
     troopinput = input("Select a troop type to send out into battle: ")
     print("---")
     if troopinput == ("Cavalry"):
@@ -47,12 +50,60 @@ def picky():
         print ("- Attack: ", Infantry.attack)
         print ("- Speed: ", Infantry.speed )
         print ("- Health: ", Infantry.health)
-
+    
 
 def base_arena():
     start = 1
-    end = 3
+    end = 4
     values = list(range(start,end))
+    choice = random.choice(values)
+    if choice == (1):
+        print ("You've encountered a demonic ZOMBIE")
+        print ("---")
+        print (Zombie.attack)
+        print (Zombie.speed)
+        print (Zombie.health)
+    elif choice == (2):
+        print ("You've encountered a ghastly SKELETON")
+        print ("---")
+        print (Skeleton.attack)
+        print (Skeleton.speed)
+        print (Skeleton.health)
+    if choice == (3):
+        print ("You've encountered a cheeky GOBLIN")   
+        print ("---")
+        print (Goblin.attack)
+        print (Goblin.speed)
+        print (Goblin.health)
+    
+def firstboss():
+    print ("You've encountered your first BOSS, the mighty MINOTAUR")
+    print ("---")
+    print (Minotaur.attack)
+    print (Minotaur.speed)
+    print (Minotaur.health)
+
+def Minotaurecounter():
+    print ("You've encountered a mighty MINOTAUR")
+    print ("---")
+    print (Minotaur.attack)
+    print (Minotaur.speed)
+    print (Minotaur.health)
+
+def Cyclops():
+    print ("You've encountered a brutal CYCLOPS ")
+    print ("---")
+    print (Cyclops.attack)
+    
+def nextboss():
+    print ("You've encountered your next BOSS, the menacing GIANT SPIDER")
+    print ("---")
+    print (GiantSpider.attack)
+    print (GiantSpider.speed)
+    print (GiantSpider.health)
+    
+
+     
 
 
 
@@ -63,10 +114,11 @@ print ("---------")
 print ("Kato Productions Presents")
 print ("BOTS Against the WORLD")
 input ("---------")
+
+
 def storyline():
     print ("The world has been run over by the overlord NelahWrM and his monstrous forces")
     print ("Many have suffered under his evil rule")
-    print ("The poor continue to be oppressed in live in destitute situations")
     print ("The poor continue to be oppressed as they live their destitute lives")
     print ("Yet the wealthy live in luxury ")
     input ("---")
@@ -88,6 +140,7 @@ def storyline():
     input ("---")
     print ("Yet these stats were random courtesy of the man who carved them")
 storyline()
+
 def intro():
     input ("---")
     print ('The distant man was kind enough to offer you these figure for his journey had long ended')
@@ -113,6 +166,7 @@ def intro():
     print ("- Speed: ", Cavalry.speed )
     print ("- Health: ", Cavalry.health)
 intro()
+
 def nextpart():
     input ("---")
     print ("You said your farwells to the distant man, as you prepared yourself for the mountainous quest you've been assigned ")
@@ -125,6 +179,7 @@ def nextpart():
     print ("---")
     print ("As you suffered with each step the first of NelahWrm's servants emerged from the swamp, The SLIME.")
 nextpart()
+
 def firstbattle():
     input ("---")
     input ("You've encountered a devilish SLIME")
