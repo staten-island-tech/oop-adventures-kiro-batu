@@ -1,119 +1,17 @@
 ## Import the types of troops
-from troops import Cavalry
-from troops import Archer
-from troops import Infantry 
+from troops import Cavalry, Archer, Infantry
 
 ##Import the blessings
-from the_blessings import Hercules
-from the_blessings import Hermes
-from the_blessings import Artemis
+from the_blessings import Hercules, Hermes, Artemis
 
 ##Import all the items
-from the_armor import Shield
-from the_armor import Boots
-from the_armor import Cloak
-from the_armor import Chestplate
+from the_armor import Shield, Boots, Cloak, Chestplate
 
 ##Import the enemies
-from enemies import Slime
-from enemies import Skeleton
-from enemies import Zombie
-from enemies import Goblin
-from enemies import Minotaur
-from enemies import Cyclops
-from enemies import GiantSpider
-from enemies import Yeti
-from enemies import Hydra
-from enemies import nelahWrM
+from enemies import Slime, Zombie, Goblin, Skeleton, Minotaur, Cyclops, GiantSpider, Yeti, Hydra, nelahWrM
 
-
-##Variables
-import random
-
-trooplist = ["Cavalry", "Archer", "Infantry" ]
-
-def picky():
-    troopinput = input("Select a troop type to send out into battle: ")
-    print("---")
-    if troopinput == ("Cavalry"):
-        print("You have selected the Cavalry: your current stats will be printed ")
-        print ("- Attack: ", Cavalry.attack)
-        print ("- Speed: ", Cavalry.speed )
-        print ("- Health: ", Cavalry.health)
-    elif troopinput == ("Archer"):
-        print("You have selected the Archer: your current stats will be printed ")
-        print ("- Attack: ", Archer.attack)
-        print ("- Speed: ", Archer.speed )
-        print ("- Health: ", Archer.health)
-    if troopinput == ("Infantry"):
-        print("You have selected the Infantry: your current stats will be printed ")
-        print ("- Attack: ", Infantry.attack)
-        print ("- Speed: ", Infantry.speed )
-        print ("- Health: ", Infantry.health)
-    
-
-def base_arena():
-    start = 1
-    end = 4
-    values = list(range(start,end))
-    choice = random.choice(values)
-    if choice == (1):
-        print ("You've encountered a demonic ZOMBIE")
-        print ("---")
-        print (Zombie.attack)
-        print (Zombie.speed)
-        print (Zombie.health)
-    elif choice == (2):
-        print ("You've encountered a ghastly SKELETON")
-        print ("---")
-        print (Skeleton.attack)
-        print (Skeleton.speed)
-        print (Skeleton.health)
-    if choice == (3):
-        print ("You've encountered a cheeky GOBLIN")   
-        print ("---")
-        print (Goblin.attack)
-        print (Goblin.speed)
-        print (Goblin.health)
-    
-def firstboss():
-    start = 1
-    end = 3
-    values = list(range(start,end))
-    choice = random.choice(values)
-
-
-    print ("You've encountered your first BOSS, the mighty MINOTAUR")
-    print ("---")
-    print (Minotaur.attack)
-    print (Minotaur.speed)
-    print (Minotaur.health)
-
-def Minotaurecounter():
-    print ("You've encountered a mighty MINOTAUR")
-    print ("---")
-    print (Minotaur.attack)
-    print (Minotaur.speed)
-    print (Minotaur.health)
-
-def Cyclops():
-    print ("You've encountered a brutal CYCLOPS ")
-    print ("---")
-    print (Cyclops.attack)
-    
-def nextboss():
-    print ("You've encountered your next BOSS, the menacing GIANT SPIDER")
-    print ("---")
-    print (GiantSpider.attack)
-    print (GiantSpider.speed)
-    print (GiantSpider.health)
-    
-
-     
-
-
-
-
+##Import all of the arenas
+from arena import picky, base_arena, firstboss, Minotaurecounter, Cyclops_Encounter, nextboss, Yeti_Encounter, Hydra_Encounter, finalboss, thefinal_encounter, nelahWrM
 
 
 print ("---------")
