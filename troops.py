@@ -62,4 +62,3 @@ Archer = troops ('Archers', archer_randomattack, archer_randomspeed, archer_rand
 Infantry = troops ('Infantry', infantry_randomattack, infantry_randomspeed, infantry_randomhealth)
 Cavalry = troops ('Cavalry', cavalry_randomattack, cavalry_randomspeed, cavalry_randomhealth)
 
-print (Infantry.speed)
