@@ -16,5 +16,3 @@ GiantSpider = Enemies ('Giant Spider', 25, 20, 30)
 Yeti = Enemies ('Yeti', 30, 30, 15)
 Hydra = Enemies ('Hydra', 40, 40, 40)
 nelahWrM = Enemies ('nelahWrM', 50, 50, 50)
-
-print (Slime.attack)
