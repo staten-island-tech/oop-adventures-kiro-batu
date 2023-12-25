@@ -14,4 +14,8 @@ Cyclops = The_Enemies ('Cyclops', 25, 25, 10)
 GiantSpider = The_Enemies ('Giant Spider', 25, 20, 30)
 Yeti = The_Enemies ('Yeti', 30, 30, 15)
 Hydra = The_Enemies ('Hydra', 40, 40, 40)
+<<<<<<< HEAD
 nelahWrM = The_Enemies ('nelahWrM', 50, 50, 50)
+=======
+nelahWrM = The_Enemies ('nelahWrM', 50, 50, 50)
+>>>>>>> Troops
