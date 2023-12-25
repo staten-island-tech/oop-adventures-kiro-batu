@@ -63,3 +63,5 @@ Infantry = troops ('Infantry', infantry_randomattack, infantry_randomspeed, infa
 Cavalry = troops ('Cavalry', cavalry_randomattack,cavalry_randomspeed,cavalry_randomhealth)
 
 print (Archer.attack, Infantry.speed, Cavalry.health)
+
+
