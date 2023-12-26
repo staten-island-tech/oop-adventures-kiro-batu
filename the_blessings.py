@@ -1,8 +1,5 @@
 import random
-<<<<<<< HEAD
-=======
 from troops import Archer, Infantry, Cavalry
->>>>>>> Numbers
 
 class blessing:
     def __init__(self, name, defense, speed, attack):
@@ -42,8 +39,6 @@ Artemisbuff = randomnum
 
 Artemis = blessing("Artemis", 0, 0, Artemisbuff)
 
-<<<<<<< HEAD
-=======
 ##attack buff
 def archer_artemis():
     Archer.attack += Artemis.attack
@@ -77,7 +72,7 @@ def cavalry_hercules():
     Cavalry.attack += Artemis.defense
     print("Your cavalry's attack stat has been updated to", Cavalry.health)
 
-def itemdrop():
+def blessingdrop():
     trooplist = ["Cavalry", "Archer", "Infantry" ]
     
     start = 1
@@ -194,6 +189,5 @@ def itemdrop():
             print ("- Speed: ", Infantry.speed )
             print ("- Health: ", Infantry.health)
         break
-itemdrop()
+blessingdrop()
 
->>>>>>> Numbers

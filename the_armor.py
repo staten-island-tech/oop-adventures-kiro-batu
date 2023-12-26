@@ -73,11 +73,6 @@ CloakSpeed = randomnum
 
 Cloak = drops ("Cloak", Cloaktype, CloakHealth, CloakSpeed )
 
-<<<<<<< HEAD
-=======
-
-
-
 
 ##shield buff
 def archer_shield():
@@ -285,4 +280,3 @@ def itemdrop():
             print ("- Health: ", Infantry.health)
         break
 itemdrop()
->>>>>>> Numbers
