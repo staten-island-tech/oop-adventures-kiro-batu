@@ -7,8 +7,11 @@ from enemies import Slime, Zombie, Goblin, Skeleton, Minotaur, Cyclops, GiantSpi
 
 trooplist = ["Cavalry", "Archer", "Infantry" ]
 
+
+troopinput = ("Select a troop type to send out into battle: ")
+
 def picky():
-    troopinput = input("Select a troop type to send out into battle: ")
+    input(troopinput)
     print("---")
     if troopinput == ("Cavalry"):
         print("You have selected the Cavalry: your current stats will be printed ")
@@ -26,6 +29,19 @@ def picky():
         print ("- Speed: ", Infantry.speed )
         print ("- Health: ", Infantry.health)
     
+def beforearena():
+    print("Before entering the next battle, you're current stats will be shown ")
+    print ("- Cavalry: Attack: ", Cavalry.attack)
+    print ("- Cavlary: Speed: ", Cavalry.speed )
+    print ("- Cavalry: Health: ", Cavalry.health)
+    input("---")
+    print ("- Archer: Attack: ", Archer.attack)
+    print ("- Archer: Speed: ", Archer.speed )
+    print ("- Archer: Health: ", Archer.health)
+    input("---")
+    print ("- Infantry: Attack: ", Infantry.attack)
+    print ("- Infantry: Speed: ", Infantry.speed )
+    print ("- Infantry: Health: ", Infantry.health)
 
 def base_arena():
     start = 1
@@ -50,6 +66,8 @@ def base_arena():
         print (Goblin.attack)
         print (Goblin.speed)
         print (Goblin.health)
+    
+    
     
 def firstboss():
     print ("You've encountered your first BOSS.")

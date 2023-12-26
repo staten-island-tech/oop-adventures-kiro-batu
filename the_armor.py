@@ -279,4 +279,4 @@ def itemdrop():
             print ("- Speed: ", Infantry.speed )
             print ("- Health: ", Infantry.health)
         break
-itemdrop()
+

@@ -189,5 +189,5 @@ def blessingdrop():
             print ("- Speed: ", Infantry.speed )
             print ("- Health: ", Infantry.health)
         break
-blessingdrop()
+
 
