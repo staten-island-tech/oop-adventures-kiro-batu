@@ -30,30 +30,30 @@ values = list(range(start,end))
 infantry_randomattack= random.choice(values)
 
 start = 5
-end = 40
+end = 30
 values = list(range(start,end))
 infantry_randomspeed= random.choice(values)
 
 start = 10
-end = 35
+end = 30
 values = list(range(start,end))
 infantry_randomhealth= random.choice(values)
 
 #for the cavalry
 start = 10
-end = 40 
+end = 30
 values = list(range(start,end))
 randomattack= random.choice(values)
 cavalry_randomattack = random.choice(values)
 
 start = 10
-end = 40
+end = 35
 values = list(range(start,end))
 randomspeed= random.choice(values)
 cavalry_randomspeed = random.choice(values)
 
 start = 15
-end = 40
+end = 30
 values = list(range(start,end))
 randomhealth= random.choice(values)
 cavalry_randomhealth = random.choice(values)
