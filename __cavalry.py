@@ -2,7 +2,6 @@ from troops import Cavalry
 from enemies import Slime, Zombie, Goblin, Skeleton, Minotaur, Cyclops, GiantSpider, Yeti, Hydra, nelahWrM
 
 
-print ("Dont worry about the number above")
 
 def vs_slimec():
 
