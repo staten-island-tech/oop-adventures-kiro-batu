@@ -46,26 +46,76 @@ def beforearena():
     print ("- Infantry: Speed: ", Infantry.speed )
     print ("- Infantry: Health: ", Infantry.health)
 
-def base_arena():
+
+def slimebattle():
     
+    print ("You've enagaged in a battle with a devilish slime")
+    print ("- The SLIME's attack stat is", Slime.attack)
+    print ("- The SLIME's health stat is", Slime.health)
+    print ("- The SLIME's speed stat is", Slime.speed)
+    
+    print ("---")
+    troopinput = input("Select a troop type to send out into battle: ")
+    
+
+    if troopinput == ("Cavalry"):
+        print("You have selected the Cavalry: your current stats will be printed ")
+        print ("---")
+        print ("- Attack: ", Cavalry.attack)
+        print ("- Speed: ", Cavalry.speed )
+        print ("- Health: ", Cavalry.health)
+    elif troopinput == ("Archer"):
+        print ("---")
+        print("You have selected the Archer: your current stats will be printed ")
+        print ("- Attack: ", Archer.attack)
+        print ("- Speed: ", Archer.speed )
+        print ("- Health: ", Archer.health)
+    if troopinput == ("Infantry"):
+        print("You have selected the Infantry: your current stats will be printed ")
+        print ("---")
+        print ("- Attack: ", Infantry.attack)
+        print ("- Speed: ", Infantry.speed )
+        print ("- Health: ", Infantry.health)
+
+    
+    while troopinput == ("Cavalry"):
+        input ("You have picked the cavalry:")
+        print ("---")
+        vs_slimec()
+        break
+
+
+    while troopinput == ("Archer"):
+        input ("You have picked the archer:")
+        print ("---")
+        vs_slimea()
+        break
+    
+    while troopinput == ("Infantry"):
+        input ("You have picked the infantry:")
+        print ("---")
+        vs_slimei()
+        break
+
+def base_arena(): 
     start = 1
     end = 4
     values = list(range(start,end))
     choice = random.choice(values)
     if choice == (1):
-        print ("You've encountered a demonic ZOMBIE")
+        print ("You've engaged in a battle with a demonic ZOMBIE")
         print ("---")
         print ("Attack:", Zombie.attack)
         print ("Speed:", Zombie.speed)
         print ("Health:", Zombie.health)
     elif choice == (2):
-        print ("You've encountered a ghastly SKELETON")
+        print ("You've engaged in a battle with a ghastly SKELETON")
         print ("---")
         print ("Attack:", Skeleton.attack)
         print ("Speed:", Skeleton.speed)
         print ("Health:", Skeleton.health)
     if choice == (3):
-        print ("You've encountered a cheeky GOBLIN")   
+        print ("You've engaged in a battle with a cheeky GOBLIN")   
         print ("---")
         print ("Attack:", Goblin.attack)
         print ("Speed:", Goblin.speed)

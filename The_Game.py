@@ -11,7 +11,7 @@ from the_armor import Shield, Boots, Cloak, Chestplate
 from enemies import Slime, Zombie, Goblin, Skeleton, Minotaur, Cyclops, GiantSpider, Yeti, Hydra, nelahWrM
 
 ##Import all of the arenas
-from arena import picky, beforearena, base_arena, firstboss, Minotaurecounter, Cyclops_Encounter, nextboss, Yeti_Encounter, Hydra_Encounter, finalboss, thefinal_encounter, nelahWrM
+from arena import picky, beforearena, slimebattle, base_arena, firstboss, Minotaurecounter, Cyclops_Encounter, nextboss, Yeti_Encounter, Hydra_Encounter, finalboss, thefinal_encounter, nelahWrM
 
 
 print ("---------")
@@ -87,15 +87,11 @@ nextpart()
 
 def firstbattle():
     input ("---")
-    input ("You've encountered a devilish SLIME:")
-    print ("The SLIME's attack stat is", Slime.attack)
-    print ("The SLIME's health stat is", Slime.health)
-    print ("The SLIME's speed stat is", Slime.speed)
-    input ('---')
     print ("As you scrambled to find your footing you fumbled through your sack to find your figures")
     print ("You're fingers felt the soft wooden figures; you returned to a sense of indomitable focus")
-    input ("---")
+    input ("---")   
     beforearena()
     input ("---")
-    base_arena()
+    slimebattle()
+    
 firstbattle()
