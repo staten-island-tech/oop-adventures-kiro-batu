@@ -4,7 +4,7 @@ from enemies import Slime, Zombie, Goblin, Skeleton, Minotaur, Cyclops, GiantSpi
 
 print ("Dont worry about the number above")
 
-def vs_slime():
+def vs_slimec():
 
     print ("You have found a Slime, good luck in this battle")
 
@@ -63,7 +63,7 @@ def vs_slime():
 
 
 
-def vs_zom():
+def vs_zomc():
 
     print ("You have found a Zombie, good luck in this battle")
 
@@ -121,7 +121,7 @@ def vs_zom():
 
 
 
-def vs_Gob():
+def vs_Gobc():
 
     print ("You have found a Goblin. Good luck")
     
@@ -178,7 +178,7 @@ def vs_Gob():
 
 
 
-def vs_Skele():
+def vs_Skelec():
 
     print ("You have found a Skeleton. Good luck")
 
@@ -237,7 +237,7 @@ def vs_Skele():
 
 
 
-def vs_Min():
+def vs_Minc():
 
     print ("You have found a Minotaur. Good luck")
 
@@ -294,7 +294,7 @@ def vs_Min():
 
 
 
-def vs_Cyc():
+def vs_Cycc():
 
     print ("You have found a Cyclops. Good luck")
 
@@ -353,7 +353,7 @@ def vs_Cyc():
 
 
 
-def vs_GS():
+def vs_GSc():
 
     print ("You have found a Giant Spider. Good luck")
 
@@ -411,7 +411,7 @@ def vs_GS():
 
 
 
-def vs_ye():
+def vs_yec():
 
     print ("You have found a Yeti. Good luck")
 
@@ -468,7 +468,7 @@ def vs_ye():
 
 
 
-def vs_hyd():
+def vs_hydc():
 
     print ("You have found a Hydra. Good luck")
 
@@ -526,7 +526,7 @@ def vs_hyd():
 
 
 
-def vs_wrm():
+def vs_wrmc():
 
     print ("You have found THE nelahWrM. This is the final boss. Good luck")
 

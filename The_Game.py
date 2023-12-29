@@ -97,5 +97,5 @@ def firstbattle():
     input ("---")
     beforearena()
     input ("---")
-    picky()
+    base_arena()
 firstbattle()

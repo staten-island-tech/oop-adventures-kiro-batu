@@ -4,6 +4,9 @@ from troops import Cavalry, Archer, Infantry
 
 ##Import the enemies
 from enemies import Slime, Zombie, Goblin, Skeleton, Minotaur, Cyclops, GiantSpider, Yeti, Hydra, nelahWrM
+from __archer import   vs_slimea, vs_Goba, vs_zoma, vs_Skelea, vs_Mina, vs_Cyca, vs_hyda, vs_GSa, vs_wrma, vs_yea
+from __infantry import   vs_slimei, vs_Gobi, vs_zomi, vs_Skelei, vs_Mini, vs_Cyci, vs_hydi, vs_GSi, vs_wrmi, vs_yei
+from __cavalry import vs_slimec, vs_Gobc, vs_zomc, vs_Skelec, vs_Minc, vs_Cycc, vs_hydc, vs_GSc, vs_wrmc, vs_yec
 
 trooplist = ["Cavalry", "Archer", "Infantry" ]
 
@@ -44,6 +47,7 @@ def beforearena():
     print ("- Infantry: Health: ", Infantry.health)
 
 def base_arena():
+    
     start = 1
     end = 4
     values = list(range(start,end))
@@ -51,23 +55,76 @@ def base_arena():
     if choice == (1):
         print ("You've encountered a demonic ZOMBIE")
         print ("---")
-        print (Zombie.attack)
-        print (Zombie.speed)
-        print (Zombie.health)
+        print ("Attack:", Zombie.attack)
+        print ("Speed:", Zombie.speed)
+        print ("Health:", Zombie.health)
     elif choice == (2):
         print ("You've encountered a ghastly SKELETON")
         print ("---")
-        print (Skeleton.attack)
-        print (Skeleton.speed)
-        print (Skeleton.health)
+        print ("Attack:", Skeleton.attack)
+        print ("Speed:", Skeleton.speed)
+        print ("Health:", Skeleton.health)
     if choice == (3):
         print ("You've encountered a cheeky GOBLIN")   
         print ("---")
-        print (Goblin.attack)
-        print (Goblin.speed)
-        print (Goblin.health)
+        print ("Attack:", Goblin.attack)
+        print ("Speed:", Goblin.speed)
+        print ("Health:", Goblin.health)
     
+
+    troopinput = input("Select a troop type to send out into battle: ")
+
+    if troopinput == ("Cavalry"):
+        print("You have selected the Cavalry: your current stats will be printed ")
+        print ("- Attack: ", Cavalry.attack)
+        print ("- Speed: ", Cavalry.speed )
+        print ("- Health: ", Cavalry.health)
+    elif troopinput == ("Archer"):
+        print("You have selected the Archer: your current stats will be printed ")
+        print ("- Attack: ", Archer.attack)
+        print ("- Speed: ", Archer.speed )
+        print ("- Health: ", Archer.health)
+    if troopinput == ("Infantry"):
+        print("You have selected the Infantry: your current stats will be printed ")
+        print ("- Attack: ", Infantry.attack)
+        print ("- Speed: ", Infantry.speed )
+        print ("- Health: ", Infantry.health)
     
+    while troopinput == ("Cavalry"):
+        input ("You have picked the cavalry, its updated stats will be shown")
+        print ("---")
+        if choice == (1):
+            vs_zomc()
+        elif choice == (2):
+            vs_Skelec
+        if choice == (3):
+            vs_Gobc
+        break
+
+    while troopinput == ("Archer"):
+        input ("You have picked the archer, its updated stats will be shown")
+        print ("---")
+        if choice == (1):
+            vs_zoma()
+        elif choice == (2):
+            vs_Skelea
+        if choice == (3):
+            vs_Goba
+        break
+    
+    while troopinput == ("Infantry"):
+        input ("You have picked the infantry, its updated stats will be shown")
+        print ("---")
+        if choice == (1):
+            vs_zomi()
+        elif choice == (2):
+            vs_Skelei
+        if choice == (3):
+            vs_Gobi
+        break
+
+
+
     
 def firstboss():
     print ("You've encountered your first BOSS.")
