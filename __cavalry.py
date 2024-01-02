@@ -1,11 +1,11 @@
 from troops import Cavalry
 from enemies import Slime, Zombie, Goblin, Skeleton, Minotaur, Cyclops, GiantSpider, Yeti, Hydra, nelahWrM
 
-
+slime_defeat = []
+troopslime = ["Cavalry", "Archer", "Infantry" ]
 
 def vs_slimec():
-    slime_defeat = []
-    troopslime= ["Cavalry", "Archer", "Infantry" ]
+
 
     print ("You have found a Slime, good luck in this battle")
 
@@ -56,9 +56,8 @@ def vs_slimec():
         if len(slime_listy) > 1:
             print ("You have beaten the Slime, good luck on your next boss")
         else:
-            print ("You have lost, yet you may continue with a different figure.")
-            slime_defeat.append(1)
-            troopslime.remove("Cavalry")
+            print ("You have lost; your figure splintered and your enemy landed a fatal blow")
+            print ("Nelahwrm's reign will continue unphased")
     slime_winny()
 
 

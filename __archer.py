@@ -56,9 +56,8 @@ def vs_slimea():
         if len(slime_listy) > 1:
             print ("You have beaten the Slime, good luck on your next boss")
         else:
-            print ("You have lost, yet you may continue with a different figure.")
-            slime_defeat.append("1")
-            troopslime.remove("Archer") 
+            print ("You have lost; your figure splintered and your enemy landed a fatal blow")
+            print ("Nelahwrm's reign will continue unphased")
     slime_winny()
    
 
