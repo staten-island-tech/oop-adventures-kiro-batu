@@ -8,52 +8,52 @@ class troops:
         self.health = health
 
 #for the archers
-start = 15
-end = 20
+start = 0
+end = 3
 values = list(range(start,end))
 archer_randomattack= random.choice(values)
 
-start = 5
-end = 20
+start = 0
+end = 3
 values = list(range(start,end))
 archer_randomspeed= random.choice(values)
 
-start = 10
-end = 20
+start = 0
+end = 3
 values = list(range(start,end))
 archer_randomhealth= random.choice(values)
 
 #for the infantry
-start = 15
-end = 20
+start = 0
+end = 3
 values = list(range(start,end))
 infantry_randomattack= random.choice(values)
 
-start = 5
-end = 20
+start = 0
+end = 3
 values = list(range(start,end))
 infantry_randomspeed= random.choice(values)
 
-start = 10
-end = 20
+start = 0
+end = 3
 values = list(range(start,end))
 infantry_randomhealth= random.choice(values)
 
 #for the cavalry
-start = 5
-end = 20
+start = 0
+end = 3
 values = list(range(start,end))
 randomattack= random.choice(values)
 cavalry_randomattack = random.choice(values)
 
-start = 10
-end = 20
+start = 0
+end = 3
 values = list(range(start,end))
 randomspeed= random.choice(values)
 cavalry_randomspeed = random.choice(values)
 
-start = 15
-end = 20
+start = 0
+end = 3
 values = list(range(start,end))
 randomhealth= random.choice(values)
 cavalry_randomhealth = random.choice(values)

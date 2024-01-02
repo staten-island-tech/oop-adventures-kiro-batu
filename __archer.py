@@ -2,9 +2,11 @@ from troops import Archer
 from enemies import Slime, Zombie, Goblin, Skeleton, Minotaur, Cyclops, GiantSpider, Yeti, Hydra, nelahWrM
 
 
+slime_defeat = []
+troopslime= ["Cavalry", "Archer", "Infantry" ]
 
 def vs_slimea():
-
+    
     print ("You have found a Slime, good luck in this battle")
 
     slime_listy = []
@@ -28,7 +30,7 @@ def vs_slimea():
     print ("Here is the Slime's health:", Slime.health)
 
     def compare_archerhealth_slime():
-        if Archer.speed > Slime.speed:
+        if Archer.health > Slime.health:
             print ("You have won in this stat, good luck in the next.")
             slime_listy.append ("1")
         else:
@@ -54,9 +56,11 @@ def vs_slimea():
         if len(slime_listy) > 1:
             print ("You have beaten the Slime, good luck on your next boss")
         else:
-            print ("You have died. Start Over by rerunning the code.")
+            print ("You have lost, yet you may continue with a different figure.")
+            slime_defeat.append("1")
+            troopslime.remove("Archer") 
     slime_winny()
-
+   
 
 
 
@@ -87,7 +91,7 @@ def vs_zoma():
     print ("Here is the Slime's health:", Slime.health)
 
     def compare_archerhealth_zom():
-        if Archer.speed > Slime.speed:
+        if Archer.health > Slime.health:
             print ("You have won in this stat, good luck in the next.")
             zom_listy.append ("1")
         else:

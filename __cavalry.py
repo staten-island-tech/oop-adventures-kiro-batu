@@ -4,6 +4,8 @@ from enemies import Slime, Zombie, Goblin, Skeleton, Minotaur, Cyclops, GiantSpi
 
 
 def vs_slimec():
+    slime_defeat = []
+    troopslime= ["Cavalry", "Archer", "Infantry" ]
 
     print ("You have found a Slime, good luck in this battle")
 
@@ -28,7 +30,7 @@ def vs_slimec():
     print ("Here is the Slime's health:", Slime.health)
 
     def compare_Cavalryhealth_slime():
-        if Cavalry.speed > Slime.speed:
+        if Cavalry.health > Slime.health:
             print ("You have won in this stat, good luck in the next.")
             slime_listy.append ("1")
         else:
@@ -54,8 +56,12 @@ def vs_slimec():
         if len(slime_listy) > 1:
             print ("You have beaten the Slime, good luck on your next boss")
         else:
-            print ("You have died. Start Over by rerunning the code.")
+            print ("You have lost, yet you may continue with a different figure.")
+            slime_defeat.append(1)
+            troopslime.remove("Cavalry")
     slime_winny()
+
+
 
 
 
@@ -87,7 +93,7 @@ def vs_zomc():
     print ("Here is the Slime's health:", Slime.health)
 
     def compare_Cavalryhealth_zom():
-        if Cavalry.speed > Slime.speed:
+        if Cavalry.health > Slime.health:
             print ("You have won in this stat, good luck in the next.")
             zom_listy.append ("1")
         else:
