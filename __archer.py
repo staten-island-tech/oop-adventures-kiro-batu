@@ -518,7 +518,7 @@ def vs_hyd():
 
     def hyd_winny():
         if len(hyd_list) > 1:
-            print ("You have beaten the Yeti, good luck on your next boss")
+            print ("You have beaten the Hydra, good luck on your next boss")
         else:
             print ("You have died. Try Again by rerunning the code.")
     hyd_winny()
@@ -565,7 +565,7 @@ def vs_wrm():
 
 
     def compare_wrm_speed():
-        if Archer.speed > Hydra.speed:
+        if Archer.speed > nelahWrM.speed:
             print ("You have won this stat, your fate will be revealed.")
             wrm_list.append ("1")
         else:
@@ -576,8 +576,7 @@ def vs_wrm():
 
     def wrm_winny():
         if len(wrm_list) > 1:
-            print ("You have beaten the Yeti, good luck on your next boss")
+            print ("You have beaten the nelahWrM, you have won!")
         else:
             print ("You have died. Try Again by rerunning the code.")
     wrm_winny()
-vs_wrm()
