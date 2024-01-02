@@ -43,3 +43,32 @@ def beforearena():
     print ("- Infantry: Speed: ", Infantry.speed )
     print ("- Infantry: Health: ", Infantry.health)
 
+def slimebattle():
+    trooplist = ["Cavalry", "Archer", "Infantry" ]
+    print ("You're know engaged within a battle with the devilish SLIME")
+    print("---")
+    print("Slime: Attack: ", Slime.attack)
+    print("Slime: Speed:", Slime.speed)
+    print("Slime: Health: ", Slime.health)
+    troopinput = input("Select a troop type to send out into battle: ")
+    if troopinput == ("Cavalry"):
+        print("---")
+        cal()
+        print("---")
+        vs_slimec()
+    elif troopinput == ("Archer"):
+        print("---")
+        arc()
+        print("---")
+        vs_slimea()
+    if troopinput == ("Infantry"):
+        print("---")
+        inf()
+        print("---")
+        vs_slimei()
+
+
+    
+    
+    
+

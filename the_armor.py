@@ -142,8 +142,10 @@ def itemdrop():
     
     start = 1
     end = 4
+    
     values = list(range(start,end))
     item_drop = random.choice(values)
+
     if item_drop == (1): 
         print ("---")
         print ("Congrats an item has dropped")
@@ -173,26 +175,28 @@ def itemdrop():
                 print ("Moreover this cloak also increase the speed of your troops by", CloakSpeed)
             break
         
-        print ("---")
-        input("Before making a decision the stats of all your troops will be shown: ")
-        print ("---")
-        print ("- Cavalry: Attack: ", Cavalry.attack)
-        print ("- Cavalry: Speed: ", Cavalry.speed )
-        print ("- Cavalry: Health: ", Cavalry.health)
-        print ("---")
-        print ("- Archer: Attack: ", Archer.attack)
-        print ("- Archer: Speed: ", Archer.speed )
-        print ("- Archer: Health: ", Archer.health)
-        print ("---")
-        print ("- Infantry: Attack: ", Infantry.attack)
-        print ("- Infantry: Speed: ", Infantry.speed )
-        print ("- Infantry: Health: ", Infantry.health)
-        print ("---")
+        while item_drop == (1): 
+            print ("---")
+            input("Before making a decision the stats of all your troops will be shown: ")
+            print ("---")
+            print ("- Cavalry: Attack: ", Cavalry.attack)
+            print ("- Cavalry: Speed: ", Cavalry.speed )
+            print ("- Cavalry: Health: ", Cavalry.health)
+            print ("---")
+            print ("- Archer: Attack: ", Archer.attack)
+            print ("- Archer: Speed: ", Archer.speed )
+            print ("- Archer: Health: ", Archer.health)
+            print ("---")
+            print ("- Infantry: Attack: ", Infantry.attack)
+            print ("- Infantry: Speed: ", Infantry.speed )
+            print ("- Infantry: Health: ", Infantry.health)
+            print ("---")
 
-    troopinput = input("Select a troop type to award you're item to: ")
-    print("---")
+            itemtroopinput = input("Select a troop type to award you're item to: ")
+            print("---")
+            break
 
-    while troopinput == ("Cavalry"):
+    while itemtroopinput == ("Cavalry"):
         input ("You have picked the cavalry, its updated stats will be shown")
         print ("---")
         if item_choice == (1):
@@ -222,7 +226,7 @@ def itemdrop():
         break
 
     
-    while troopinput == ("Archer"):
+    while itemtroopinput == ("Archer"):
         input ("You have picked the archer, its updated stats will be shown")
         print ("---")
         if item_choice == (1):
@@ -251,7 +255,7 @@ def itemdrop():
             print ("- Health: ", Archer.health)
         break
 
-    while troopinput == ("Infantry"):
+    while itemtroopinput == ("Infantry"):
         input ("You have picked the infantry, its updated stats will be shown")
         print ("---")
         if item_choice == (1):
@@ -279,4 +283,3 @@ def itemdrop():
             print ("- Speed: ", Infantry.speed )
             print ("- Health: ", Infantry.health)
         break
-

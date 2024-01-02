@@ -79,6 +79,7 @@ def blessingdrop():
     end = 6
     values = list(range(start,end))
     item_drop = random.choice(values)
+
     if item_drop == (1): 
         print ("---")
         print ("Congrats a mystical blessing has fallen")
@@ -101,24 +102,26 @@ def blessingdrop():
                 print ("This charm channel his mighty strength and provides a buff of", Herculesbuff, "to the Attack of your troops")
             break
         
-        print ("---")
-        input("Before making a decision the stats of all your troops will be shown: ")
-        print ("---")
-        print ("- Cavalry: Attack: ", Cavalry.attack)
-        print ("- Cavalry: Speed: ", Cavalry.speed )
-        print ("- Cavalry: Health: ", Cavalry.health)
-        print ("---")
-        print ("- Archer: Attack: ", Archer.attack)
-        print ("- Archer: Speed: ", Archer.speed )
-        print ("- Archer: Health: ", Archer.health)
-        print ("---")
-        print ("- Infantry: Attack: ", Infantry.attack)
-        print ("- Infantry: Speed: ", Infantry.speed )
-        print ("- Infantry: Health: ", Infantry.health)
-        print ("---")
+        while item_drop == (1):
+            print ("---")
+            input("Before making a decision the stats of all your troops will be shown: ")
+            print ("---")
+            print ("- Cavalry: Attack: ", Cavalry.attack)
+            print ("- Cavalry: Speed: ", Cavalry.speed )
+            print ("- Cavalry: Health: ", Cavalry.health)
+            print ("---")
+            print ("- Archer: Attack: ", Archer.attack)
+            print ("- Archer: Speed: ", Archer.speed )
+            print ("- Archer: Health: ", Archer.health)
+            print ("---")
+            print ("- Infantry: Attack: ", Infantry.attack)
+            print ("- Infantry: Speed: ", Infantry.speed )
+            print ("- Infantry: Health: ", Infantry.health)
+            print ("---")
 
-    troopinput = input("Select a troop type to award you're item to: ")
-    print("---")
+            troopinput = input("Select a troop type to award you're item to: ")
+            print("---")
+            break
 
     while troopinput == ("Cavalry"):
         input ("You have picked the cavalry, its updated stats will be shown")

@@ -2,16 +2,16 @@
 from troops import Cavalry, Archer, Infantry
 
 ##Import the blessings
-from the_blessings import Hercules, Hermes, Artemis
+from the_blessings import Hercules, Hermes, Artemis, blessingdrop, archer_artemis, archer_hercules, archer_hermes, infantry_artemis, infantry_hercules, infantry_hermes, cavalry_artemis, cavalry_hercules, cavalry_hermes
 
 ##Import all the items
-from the_armor import Shield, Boots, Cloak, Chestplate
+from the_armor import Shield, Boots, Cloak, Chestplate, itemdrop, archer_boots, archer_chestplate, archer_cloak, archer_shield, infantry_chestplate, infantry_boots, infantry_shield, infantry_cloak, cavalry_boots, cavalry_chestplate, cavalry_cloak, cavalry_shield
 
 ##Import the enemies
 from enemies import Slime, Zombie, Goblin, Skeleton, Minotaur, Cyclops, GiantSpider, Yeti, Hydra, nelahWrM
 
 ##Import all of the arenas
-from arena import picky, beforearena, slimebattle, base_arena, firstboss, Minotaurecounter, Cyclops_Encounter, nextboss, Yeti_Encounter, Hydra_Encounter, finalboss, thefinal_encounter, nelahWrM
+from arena import beforearena, slimebattle
 
 
 print ("---------")
@@ -93,5 +93,6 @@ def firstbattle():
     beforearena()
     input ("---")
     slimebattle()
-    
+    itemdrop()
+    print ("---")
 firstbattle()
