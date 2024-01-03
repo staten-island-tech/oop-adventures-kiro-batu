@@ -196,7 +196,7 @@ def itemdrop():
             print("---")
             break
 
-    while itemtroopinput == ("Cavalry"):
+    if itemtroopinput == ("Cavalry"):
         input ("You have picked the cavalry, its updated stats will be shown")
         print ("---")
         if item_choice == (1):
@@ -223,10 +223,10 @@ def itemdrop():
             print ("- Attack: ", Cavalry.attack)
             print ("- Speed: ", Cavalry.speed )
             print ("- Health: ", Cavalry.health)
-        break
+      
 
     
-    while itemtroopinput == ("Archer"):
+    elif itemtroopinput == ("Archer"):
         input ("You have picked the archer, its updated stats will be shown")
         print ("---")
         if item_choice == (1):
@@ -253,9 +253,9 @@ def itemdrop():
             print ("- Attack: ", Archer.attack)
             print ("- Speed: ", Archer.speed )
             print ("- Health: ", Archer.health)
-        break
 
-    while itemtroopinput == ("Infantry"):
+
+    if itemtroopinput == ("Infantry"):
         input ("You have picked the infantry, its updated stats will be shown")
         print ("---")
         if item_choice == (1):
@@ -282,4 +282,4 @@ def itemdrop():
             print ("- Attack: ", Infantry.attack)
             print ("- Speed: ", Infantry.speed )
             print ("- Health: ", Infantry.health)
-        break
+

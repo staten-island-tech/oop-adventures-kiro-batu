@@ -67,6 +67,9 @@ def slimebattle():
         print("---")
         vs_slimei()
 
+def nextarena():
+    troopinput = ["Cavalry", "Archer", "Infantr"
+
 
     
     
