@@ -68,7 +68,80 @@ def slimebattle():
         vs_slimei()
 
 def nextarena():
-    troopinput = ["Cavalry", "Archer", "Infantr"
+    troopinput = ["Cavalry", "Archer", "Infantry"]
+    print ("After you're simple introduction, courtesy of the Slime, you will now engage in more proper fights")
+    
+    start = 1
+    end = 4
+    
+    values = list(range(start,end))
+    mon_choice = random.choice(values)
+
+    if mon_choice == (1):
+        print ("You've engaged in a battle with a demonic ZOMBIE")
+        print ("---")
+        print ("Attack:", Zombie.attack)
+        print ("Speed:", Zombie.speed)
+        print ("Health:", Zombie.health)
+    elif mon_choice == (2):
+        print ("You've engaged in a battle with a ghastly SKELETON")
+        print ("---")
+        print ("Attack:", Skeleton.attack)
+        print ("Speed:", Skeleton.speed)
+        print ("Health:", Skeleton.health)
+    if mon_choice == (3):
+        print ("You've engaged in a battle with a cheeky GOBLIN")   
+    while len(slime_defeat) == 1:
+        print ("---")
+        print ("Attack:", Goblin.attack)
+        print ("Speed:", Goblin.speed)
+        print ("Health:", Goblin.health)
+    
+    troopinput = input("Select a troop type to send out into battle: ")
+
+    while troopinput == ("Cavalry"):
+        print("---")
+        cal()
+        if mon_choice == (1):
+            print("---")
+            vs_Gobc
+        if mon_choice == (2):
+            print("---")
+            vs_zomc
+        if mon_choice == (3):
+            print("---")
+            vs_Skelec
+
+    while troopinput == ("Archer"):
+        print("---")
+        arc()
+        if mon_choice == (1):
+            print("---")
+            vs_Goba
+        if mon_choice == (2):
+            print("---")
+            vs_zoma
+        if mon_choice == (3):
+            print("---")
+            vs_Skelea
+
+    while troopinput == ("Infantry"):
+        print("---")
+        inf()
+        if mon_choice == (1):
+            print("---")
+            vs_Gobi
+        if mon_choice == (2):
+            print("---")
+            vs_zomi
+        if mon_choice == (3):
+            print("---")
+            vs_Skelei
+
+def minoboss():
+    print("You've encountered your first boss, traveler")
+and
+
 
 
     
