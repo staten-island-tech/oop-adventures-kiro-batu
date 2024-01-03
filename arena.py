@@ -66,11 +66,9 @@ def slimebattle():
         inf()
         print("---")
         vs_slimei()
-<<<<<<< HEAD
     else:
         print ("This was not one of the options. Remember, the choice must be first letter capital.")
         return slimebattle()
-=======
 
 def nextarena():
     troopinput = ["Cavalry", "Archer", "Infantry"]
@@ -153,4 +151,3 @@ and
     
     
 
->>>>>>> 3e4bf7a70b28b6a7753e1b97defcf8035cd154e9
