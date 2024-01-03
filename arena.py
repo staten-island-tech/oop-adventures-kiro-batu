@@ -66,12 +66,6 @@ def slimebattle():
         inf()
         print("---")
         vs_slimei()
-
-def nextarena():
-    troopinput = ["Cavalry", "Archer", "Infantr"
-
-
-    
-    
-    
-
+    else:
+        print ("This was not one of the options. Remember, the choice must be first letter capital.")
+        return slimebattle()

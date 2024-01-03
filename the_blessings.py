@@ -102,7 +102,7 @@ def blessingdrop():
                 print ("This charm channel his mighty strength and provides a buff of", Herculesbuff, "to the Attack of your troops")
             break
         
-        while item_drop == (1):
+        if item_drop == (1):
             print ("---")
             input("Before making a decision the stats of all your troops will be shown: ")
             print ("---")
@@ -121,76 +121,76 @@ def blessingdrop():
 
             troopinput = input("Select a troop type to award you're item to: ")
             print("---")
-            break
+            
 
-    while troopinput == ("Cavalry"):
-        input ("You have picked the cavalry, its updated stats will be shown")
-        print ("---")
-        if item_choice == (1):
-            cavalry_artemis()
-            print ("---")
-            print ("- Attack: ", Cavalry.attack)
-            print ("- Speed: ", Cavalry.speed )
-            print ("- Health: ", Cavalry.health)
-        elif item_choice == (2):
-            cavalry_hermes()
-            print ("---")
-            print ("- Attack: ", Cavalry.attack)
-            print ("- Speed: ", Cavalry.speed )
-            print ("- Health: ", Cavalry.health)
-        if item_choice == (3):
-            cavalry_hercules()
-            print ("---")
-            print ("- Attack: ", Cavalry.attack)
-            print ("- Speed: ", Cavalry.speed )
-            print ("- Health: ", Cavalry.health)
-        break
+            if troopinput == ("Cavalry"):
+                input ("You have picked the cavalry, its updated stats will be shown")
+                print ("---")
+                if item_choice == (1):
+                    cavalry_artemis()
+                    print ("---")
+                    print ("- Attack: ", Cavalry.attack)
+                    print ("- Speed: ", Cavalry.speed )
+                    print ("- Health: ", Cavalry.health)
+                elif item_choice == (2):
+                    cavalry_hermes()
+                    print ("---")
+                    print ("- Attack: ", Cavalry.attack)
+                    print ("- Speed: ", Cavalry.speed )
+                    print ("- Health: ", Cavalry.health)
+                elif item_choice == (3):
+                    cavalry_hercules()
+                    print ("---")
+                    print ("- Attack: ", Cavalry.attack)
+                    print ("- Speed: ", Cavalry.speed )
+                    print ("- Health: ", Cavalry.health)
 
-    
-    while troopinput == ("Archer"):
-        input ("You have picked the archer, its updated stats will be shown")
-        print ("---")
-        if item_choice == (1):
-            archer_artemis()
-            print ("---")
-            print ("- Attack: ", Archer.attack)
-            print ("- Speed: ", Archer.speed )
-            print ("- Health: ", Archer.health)
-        elif item_choice == (2):
-            archer_hermes()
-            print ("---")
-            print ("- Attack: ", Archer.attack)
-            print ("- Speed: ", Archer.speed )
-            print ("- Health: ", Archer.health)
-        if item_choice == (3):
-            archer_hercules()
-            print ("---")
-            print ("- Attack: ", Archer.attack)
-            print ("- Speed: ", Archer.speed )
-            print ("- Health: ", Archer.health)
-        break
 
-    while troopinput == ("Infantry"):
-        input ("You have picked the infantry, its updated stats will be shown")
-        print ("---")
-        if item_choice == (1):
-            infantry_artemis()
-            print ("---")
-            print ("- Attack: ", Infantry.attack)
-            print ("- Speed: ", Infantry.speed )
-            print ("- Health: ", Infantry.health)
-        elif item_choice == (2):
-            infantry_hermes()
-            print ("---")
-            print ("- Attack: ", Infantry.attack)
-            print ("- Speed: ", Infantry.speed )
-            print ("- Health: ", Infantry.health)
-        if item_choice == (3):
-            infantry_hercules()
-            print ("---")
-            print ("- Attack: ", Infantry.attack)
-            print ("- Speed: ", Infantry.speed )
-            print ("- Health: ", Infantry.health)
-        break
+            if troopinput == ("Archer"):
+                input ("You have picked the archer, its updated stats will be shown")
+                print ("---")
+                if item_choice == (1):
+                    archer_artemis()
+                    print ("---")
+                    print ("- Attack: ", Archer.attack)
+                    print ("- Speed: ", Archer.speed )
+                    print ("- Health: ", Archer.health)
+                elif item_choice == (2):
+                    archer_hermes()
+                    print ("---")
+                    print ("- Attack: ", Archer.attack)
+                    print ("- Speed: ", Archer.speed )
+                    print ("- Health: ", Archer.health)
+                elif item_choice == (3):
+                    archer_hercules()
+                    print ("---")
+                    print ("- Attack: ", Archer.attack)
+                    print ("- Speed: ", Archer.speed )
+                    print ("- Health: ", Archer.health)
 
+            if troopinput == ("Infantry"):
+                input ("You have picked the infantry, its updated stats will be shown")
+                print ("---")
+                if item_choice == (1):
+                    infantry_artemis()
+                    print ("---")
+                    print ("- Attack: ", Infantry.attack)
+                    print ("- Speed: ", Infantry.speed )
+                    print ("- Health: ", Infantry.health)
+                elif item_choice == (2):
+                    infantry_hermes()
+                    print ("---")
+                    print ("- Attack: ", Infantry.attack)
+                    print ("- Speed: ", Infantry.speed )
+                    print ("- Health: ", Infantry.health)
+                elif item_choice == (3):
+                    infantry_hercules()
+                    print ("---")
+                    print ("- Attack: ", Infantry.attack)
+                    print ("- Speed: ", Infantry.speed )
+                    print ("- Health: ", Infantry.health)
+            else:
+                print ("This was not one of the options. Remember, the choice must be first letter capital.")
+                return blessingdrop()
+blessingdrop()
 
