@@ -72,7 +72,7 @@ def slimebattle():
 
 def nextarena():
     troopinput = ["Cavalry", "Archer", "Infantry"]
-    print ("After you're simple introduction, courtesy of the Slime, you will now engage in more proper fights")
+    print ("The BATTLES continuing this point will be more fulfilling")
     
     start = 1
     end = 4
@@ -83,22 +83,21 @@ def nextarena():
     if mon_choice == (1):
         print ("You've engaged in a battle with a demonic ZOMBIE")
         print ("---")
-        print ("Attack:", Zombie.attack)
-        print ("Speed:", Zombie.speed)
-        print ("Health:", Zombie.health)
+        print ("Zombie: Attack:", Zombie.attack)
+        print ("Zombie: Speed:", Zombie.speed)
+        print ("Zombie: Health", Zombie.health)
     elif mon_choice == (2):
         print ("You've engaged in a battle with a ghastly SKELETON")
         print ("---")
-        print ("Attack:", Skeleton.attack)
-        print ("Speed:", Skeleton.speed)
-        print ("Health:", Skeleton.health)
+        print ("Skeleton: Attack:", Skeleton.attack)
+        print ("Skeleton: Speed:", Skeleton.speed)
+        print ("Skeleton: Health:", Skeleton.health)
     if mon_choice == (3):
         print ("You've engaged in a battle with a cheeky GOBLIN")   
-    while len(slime_defeat) == 1:
         print ("---")
-        print ("Attack:", Goblin.attack)
-        print ("Speed:", Goblin.speed)
-        print ("Health:", Goblin.health)
+        print ("Goblin: Attack:", Goblin.attack)
+        print ("Goblin: Speed:", Goblin.speed)
+        print ("Goblin: Health:", Goblin.health)
     
     troopinput = input("Select a troop type to send out into battle: ")
 
@@ -142,12 +141,119 @@ def nextarena():
             vs_Skelei
 
 def minoboss():
-    print("You've encountered your first boss, traveler")
-and
+    print("You've encountered your first boss traveler")
+    print("THE MIGHTY MINOTAUR shall be your opponent")
+    print("---")
+    print("Minotaur: Attack: ", Minotaur.attack)
+    print("Minotaur: Speed: ", Minotaur.speed)
+    print("Minotaur: Health: ", Minotaur.health)
+
+    troopinput = input("Select a troop type to send out into battle: ")
+    if troopinput == ("Cavalry"):
+        print("---")
+        cal()
+        print("---")
+        vs_Minc()
+    elif troopinput == ("Archer"):
+        print("---")
+        arc()
+        print("---")
+        vs_Mina()
+    if troopinput == ("Infantry"):
+        print("---")
+        inf()
+        print("---")
+        vs_Mina()
+    else:
+        print ("This was not one of the options. Remember, the choice must be first letter capital.")
+        input("---")
+        return minoboss()
 
 
-
+def nexterarena():
+    print("The BATTLES after this point will definetely be more challenging")
+    start = 1
+    end = 3
     
+    values = list(range(start,end))
+    mon_choice = random.choice(values)
+
+    if mon_choice == (1):
+        print ("You've engaged in a battle with a mighty MINOTAUR")
+        print ("---")
+        print ("Minotaur: Attack:", Minotaur.attack)
+        print ("Minotaur: Speed:", Minotaur.speed)
+        print ("Minotaur: Health", Minotaur.health)
+    elif mon_choice == (2):
+        print ("You've engaged in a battle with a cynical CYCLOPS")
+        print ("---")
+        print ("Cyclops: Attack:", Cyclops.attack)
+        print ("Cyclops: Speed:", Cyclops.speed)
+        print ("Cyclops: Health:", Cyclops.health)
+    
+    troopinput = input("Select a troop type to send out into battle: ")
+
+    while troopinput == ("Cavalry"):
+        print("---")
+        cal()
+        if mon_choice == (1):
+            print("---")
+            vs_Minc
+        if mon_choice == (2):
+            print("---")
+            vs_Cycc
+
+
+    while troopinput == ("Archer"):
+        print("---")
+        arc()
+        if mon_choice == (1):
+            print("---")
+            vs_Mina
+        if mon_choice == (2):
+            print("---")
+            vs_Cyca
+
+    while troopinput == ("Infantry"):
+        print("---")
+        inf()
+        if mon_choice == (1):
+            print("---")
+            vs_Mini
+        if mon_choice == (2):
+            print("---")
+            vs_Cyci
+
+def GSboss ():
+    print("You've encountered your first boss traveler")
+    print("THE GINORMOUS GIANT SPIDER shall be your opponent")
+    print("---")
+    print("Giant Spider: Attack: ", GSboss.attack)
+    print("Giant Spider: Speed: ", GSboss.speed)
+    print("Giant Spider: Health: ", GSboss.health)
+
+    troopinput = input("Select a troop type to send out into battle: ")
+    if troopinput == ("Cavalry"):
+        print("---")
+        cal()
+        print("---")
+        vs_GSc()
+    elif troopinput == ("Archer"):
+        print("---")
+        arc()
+        print("---")
+        vs_GSa()
+    if troopinput == ("Infantry"):
+        print("---")
+        inf()
+        print("---")
+        vs_GSi()
+    else:
+        print ("This was not one of the options. Remember, the choice must be first letter capital.")
+        input("---")
+        return GSboss()
+
+
     
     
 
