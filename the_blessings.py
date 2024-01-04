@@ -72,22 +72,25 @@ def cavalry_hercules():
     Cavalry.attack += Artemis.defense
     print("Your cavalry's attack stat has been updated to", Cavalry.health)
 
-def blessingdrop():
-    trooplist = ["Cavalry", "Archer", "Infantry" ]
-    
-    start = 1
-    end = 6
-    values = list(range(start,end))
-    item_drop = random.choice(values)
+trooplist = ["Cavalry", "Archer", "Infantry" ]
 
+start = 1
+end = 6
+values = list(range(start,end))
+item_drop = random.choice(values)
+
+start = 1
+end = 4
+values = list(range(start,end))
+item_choice = random.choice(values)
+
+def blessingdrop():
+    
     if item_drop == (1): 
         print ("---")
         print ("Congrats a mystical blessing has fallen")
         while item_drop == (1):
-            start = 1
-            end = 4
-            values = list(range(start,end))
-            item_choice = random.choice(values)
+
             if item_choice == (1):
                 input ("Artemis has offered to bless one of your troops")
                 print ("---")
@@ -118,7 +121,9 @@ def blessingdrop():
             print ("- Infantry: Speed: ", Infantry.speed )
             print ("- Infantry: Health: ", Infantry.health)
             print ("---")
+blessingdrop()
 
+def the_choice():
             troopinput = input("Select a troop type to award you're item to: ")
             print("---")
             
@@ -189,8 +194,7 @@ def blessingdrop():
                     print ("- Attack: ", Infantry.attack)
                     print ("- Speed: ", Infantry.speed )
                     print ("- Health: ", Infantry.health)
-            else:
-                print ("This was not one of the options. Remember, the choice must be first letter capital.")
-                return blessingdrop()
-blessingdrop()
-
+            if not troopinput in trooplist:
+                print ("This was not one of the choices. Remember, Archer, Infantry, or Cavalry.")
+                return the_choice()
+the_choice()
