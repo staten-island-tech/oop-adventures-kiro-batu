@@ -138,12 +138,14 @@ def cavalry_cloak():
 
 
 def itemdrop():
+    global trooplist
     trooplist = ["Cavalry", "Archer", "Infantry" ]
     
     start = 1
-    end = 4
+    end = 2
     
     values = list(range(start,end))
+    global item_drop
     item_drop = random.choice(values)
 
     if item_drop == (1): 
@@ -153,6 +155,7 @@ def itemdrop():
             start = 1
             end = 5
             values = list(range(start,end))
+            global item_choice
             item_choice = random.choice(values)
             if item_choice == (1):
                 input ("Your prize is a shield")
@@ -191,10 +194,12 @@ def itemdrop():
             print ("- Infantry: Speed: ", Infantry.speed )
             print ("- Infantry: Health: ", Infantry.health)
             print ("---")
-
-            itemtroopinput = input("Select a troop type to award you're item to: ")
-            print("---")
             break
+itemdrop()
+
+def armor_choice():
+    itemtroopinput = input("Select a troop type to award you're item to: ")
+    print("---")
 
     if itemtroopinput == ("Cavalry"):
         input ("You have picked the cavalry, its updated stats will be shown")
@@ -283,3 +288,7 @@ def itemdrop():
             print ("- Speed: ", Infantry.speed )
             print ("- Health: ", Infantry.health)
 
+    if not itemtroopinput in trooplist:
+        print ("This was not one of the choices. Remember, Archer, Infantry, or Cavalry.")
+        return armor_choice()
+armor_choice()

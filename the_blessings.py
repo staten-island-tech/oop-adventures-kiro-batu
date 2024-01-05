@@ -66,26 +66,29 @@ def archer_hercules():
     Archer.health += Hercules.defense
     print("Your archer's health stat has been updated to", Archer.health)
 def infantry_hercules():
-    Infantry.health += Artemis.defense
+    Infantry.health += Hercules.defense
     print("Your infantry's health stat has been updated to", Infantry.health)
 def cavalry_hercules():
-    Cavalry.attack += Artemis.defense
+    Cavalry.attack += Hercules.defense
     print("Your cavalry's attack stat has been updated to", Cavalry.health)
 
 trooplist = ["Cavalry", "Archer", "Infantry" ]
 
-start = 1
-end = 6
-values = list(range(start,end))
-item_drop = random.choice(values)
 
-start = 1
-end = 4
-values = list(range(start,end))
-item_choice = random.choice(values)
 
 def blessingdrop():
-    
+    start = 1
+    end = 2
+    values = list(range(start,end))
+    global item_drop
+    item_drop = random.choice(values)
+
+    start = 1
+    end = 4
+    values = list(range(start,end))
+    global item_choice
+    item_choice = random.choice(values)
+
     if item_drop == (1): 
         print ("---")
         print ("Congrats a mystical blessing has fallen")
@@ -104,7 +107,7 @@ def blessingdrop():
                 print ("---")
                 print ("This charm channel his mighty strength and provides a buff of", Herculesbuff, "to the Attack of your troops")
             break
-        
+
         if item_drop == (1):
             print ("---")
             input("Before making a decision the stats of all your troops will be shown: ")
@@ -124,6 +127,7 @@ def blessingdrop():
 
 
 def the_choice():
+    while item_drop == (1):
             troopinput = input("Select a troop type to award you're item to: ")
             print("---")
             
@@ -149,7 +153,7 @@ def the_choice():
                     print ("- Attack: ", Cavalry.attack)
                     print ("- Speed: ", Cavalry.speed )
                     print ("- Health: ", Cavalry.health)
-
+                break
 
             if troopinput == ("Archer"):
                 input ("You have picked the archer, its updated stats will be shown")
@@ -172,7 +176,8 @@ def the_choice():
                     print ("- Attack: ", Archer.attack)
                     print ("- Speed: ", Archer.speed )
                     print ("- Health: ", Archer.health)
-
+                break
+       
             if troopinput == ("Infantry"):
                 input ("You have picked the infantry, its updated stats will be shown")
                 print ("---")
@@ -194,6 +199,7 @@ def the_choice():
                     print ("- Attack: ", Infantry.attack)
                     print ("- Speed: ", Infantry.speed )
                     print ("- Health: ", Infantry.health)
+                break
             if not troopinput in trooplist:
                 print ("This was not one of the choices. Remember, Archer, Infantry, or Cavalry.")
                 return the_choice()
