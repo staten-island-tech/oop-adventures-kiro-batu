@@ -45,12 +45,15 @@ def beforearena():
 
 def slimebattle():
     trooplist = ["Cavalry", "Archer", "Infantry" ]
+
     print ("You're know engaged within a battle with the devilish SLIME")
     print("---")
     print("Slime: Attack: ", Slime.attack)
     print("Slime: Speed:", Slime.speed)
     print("Slime: Health: ", Slime.health)
+
     troopinput = input("Select a troop type to send out into battle: ")
+
     if troopinput == ("Cavalry"):
         print("---")
         cal()
@@ -78,65 +81,67 @@ def nextarena():
     end = 4
     
     values = list(range(start,end))
-    mon_choice = random.choice(values)
+    global mon_choicena
+    mon_choicena = random.choice(values)
 
-    if mon_choice == (1):
+    if mon_choicena == (1):
         print ("You've engaged in a battle with a demonic ZOMBIE")
         print ("---")
         print ("Zombie: Attack:", Zombie.attack)
         print ("Zombie: Speed:", Zombie.speed)
         print ("Zombie: Health", Zombie.health)
-    elif mon_choice == (2):
+    elif mon_choicena == (2):
         print ("You've engaged in a battle with a ghastly SKELETON")
         print ("---")
         print ("Skeleton: Attack:", Skeleton.attack)
         print ("Skeleton: Speed:", Skeleton.speed)
         print ("Skeleton: Health:", Skeleton.health)
-    if mon_choice == (3):
+    if mon_choicena == (3):
         print ("You've engaged in a battle with a cheeky GOBLIN")   
         print ("---")
         print ("Goblin: Attack:", Goblin.attack)
         print ("Goblin: Speed:", Goblin.speed)
         print ("Goblin: Health:", Goblin.health)
     
+def nextarenafight():
     troopinput = input("Select a troop type to send out into battle: ")
 
     while troopinput == ("Cavalry"):
         print("---")
         cal()
-        if mon_choice == (1):
+        if mon_choicena == (1):
             print("---")
             vs_Gobc
-        if mon_choice == (2):
+        if mon_choicena == (2):
             print("---")
             vs_zomc
-        if mon_choice == (3):
+        if mon_choicena == (3):
             print("---")
             vs_Skelec
 
     while troopinput == ("Archer"):
         print("---")
         arc()
-        if mon_choice == (1):
+        if mon_choicena == (1):
             print("---")
             vs_Goba
-        if mon_choice == (2):
+        if mon_choicena == (2):
             print("---")
             vs_zoma
-        if mon_choice == (3):
+        if mon_choicena == (3):
             print("---")
             vs_Skelea
 
     while troopinput == ("Infantry"):
         print("---")
         inf()
-        if mon_choice == (1):
+        if mon_choicena == (1):
             print("---")
             vs_Gobi
-        if mon_choice == (2):
+        if mon_choicena == (2):
             print("---")
             vs_zomi
-        if mon_choice == (3):
+        if mon_choicena == (3):
             print("---")
             vs_Skelei
 
@@ -176,30 +181,33 @@ def nexterarena():
     end = 3
     
     values = list(range(start,end))
-    mon_choice = random.choice(values)
+    global mon_choicenea
+    mon_choicenea = random.choice(values)
+    
 
-    if mon_choice == (1):
+    if mon_choicenea == (1):
         print ("You've engaged in a battle with a mighty MINOTAUR")
         print ("---")
         print ("Minotaur: Attack:", Minotaur.attack)
         print ("Minotaur: Speed:", Minotaur.speed)
         print ("Minotaur: Health", Minotaur.health)
-    elif mon_choice == (2):
+    elif mon_choicenea == (2):
         print ("You've engaged in a battle with a cynical CYCLOPS")
         print ("---")
         print ("Cyclops: Attack:", Cyclops.attack)
         print ("Cyclops: Speed:", Cyclops.speed)
         print ("Cyclops: Health:", Cyclops.health)
     
+def nexterarenafight():
     troopinput = input("Select a troop type to send out into battle: ")
 
     while troopinput == ("Cavalry"):
         print("---")
         cal()
-        if mon_choice == (1):
+        if mon_choicenea == (1):
             print("---")
             vs_Minc
-        if mon_choice == (2):
+        if mon_choicenea == (2):
             print("---")
             vs_Cycc
 
@@ -207,22 +215,27 @@ def nexterarena():
     while troopinput == ("Archer"):
         print("---")
         arc()
-        if mon_choice == (1):
+        if mon_choicenea == (1):
             print("---")
             vs_Mina
-        if mon_choice == (2):
+        if mon_choicenea == (2):
             print("---")
             vs_Cyca
 
     while troopinput == ("Infantry"):
         print("---")
         inf()
-        if mon_choice == (1):
+        if mon_choicenea == (1):
             print("---")
             vs_Mini
-        if mon_choice == (2):
+        if mon_choicenea == (2):
             print("---")
             vs_Cyci
+    
+    else:
+        print ("This was not one of the options. Remember, the choice must be first letter capital.")
+        input("---")
+        return nexterarenafight()
 
 def GSboss ():
     print("You've encountered your first boss traveler")
@@ -253,7 +266,127 @@ def GSboss ():
         input("---")
         return GSboss()
 
-
+def nextererarena():
+    print("The BATTLES after this point will definetely be more challenging")
+    start = 1
+    end = 3
     
+    values = list(range(start,end))
+    global mon_choiceneea
+    mon_choiceneea = random.choice(values)
+    
+
+    if mon_choiceneea == (1):
+        print ("You've engaged in a battle with a ginormous GIANT SPIDER")
+        print ("---")
+        print ("Giant Spider: Attack:", GiantSpider.attack)
+        print ("Giant Spider: Speed:", GiantSpider.speed)
+        print ("Giant Spider: Health", GiantSpider.health)
+    elif mon_choiceneea == (2):
+        print ("You've engaged in a battle with a yellow YETI")
+        print ("---")
+        print ("Yeti: Attack:", Yeti.attack)
+        print ("Yeti: Speed:", Yeti.speed)
+        print ("Yeti: Health:", Yeti.health)
+
+def nextererarenafight():
+    troopinput = input("Select a troop type to send out into battle: ")
+
+    while troopinput == ("Cavalry"):
+        print("---")
+        cal()
+        if mon_choicenea == (1):
+            print("---")
+            vs_Minc
+        if mon_choiceneea == (2):
+            print("---")
+            vs_Cycc
+
+
+    while troopinput == ("Archer"):
+        print("---")
+        arc()
+        if mon_choiceneea == (1):
+            print("---")
+            vs_Mina
+        if mon_choiceneea == (2):
+            print("---")
+            vs_Cyca
+
+    while troopinput == ("Infantry"):
+        print("---")
+        inf()
+        if mon_choiceneea == (1):
+            print("---")
+            vs_Mini
+        if mon_choiceneea == (2):
+            print("---")
+            vs_Cyci
+    
+    else:
+        print ("This was not one of the options. Remember, the choice must be first letter capital.")
+        input("---")
+        return nexterarenafight()
+    
+def hydraboss():
+    print("You've encountered the final servant of Nelahwrm")
+    print("THE HORRID HYDRA shall be your opponent")
+    print("---")
+    print("Hydra: Attack: ", Hydra.attack)
+    print("Hydra: Speed: ", Hydra.speed)
+    print("Hydra: Health: ", Hydra.health)
+
+    troopinput = input("Select a troop type to send out into battle: ")
+    if troopinput == ("Cavalry"):
+        print("---")
+        cal()
+        print("---")
+        vs_hydc()
+    elif troopinput == ("Archer"):
+        print("---")
+        arc()
+        print("---")
+        vs_hyda()
+    if troopinput == ("Infantry"):
+        print("---")
+        inf()
+        print("---")
+        vs_hydi()
+    else:
+        print ("This was not one of the options. Remember, the choice must be first letter capital.")
+        input("---")
+        return hydraboss()
+
+def Nelahwrmfight():
+    print("You've stood eye to eye with Nelahwrm")
+    print("Stand proud, for the NEFARIOUS NELAHWRM shall be your opponent")
+    print("---")
+    print("Nelahwrm: Attack: ", nelahWrM.attack)
+    print("Nelahwrm: Speed: ", nelahWrM.speed)
+    print("Nelahwrm: Health: ", nelahWrM.health)
+
+    troopinput = input("Select a troop type to send out into battle: ")
+    if troopinput == ("Cavalry"):
+        print("---")
+        cal()
+        print("---")
+        vs_wrmc()
+    elif troopinput == ("Archer"):
+        print("---")
+        arc()
+        print("---")
+        vs_wrma()
+    if troopinput == ("Infantry"):
+        print("---")
+        inf()
+        print("---")
+        vs_wrmi()
+    else:
+        print ("This was not one of the options. Remember, the choice must be first letter capital.")
+        input("---")
+        return Nelahwrmfight()
+
+
+
     
 

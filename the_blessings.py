@@ -121,7 +121,7 @@ def blessingdrop():
             print ("- Infantry: Speed: ", Infantry.speed )
             print ("- Infantry: Health: ", Infantry.health)
             print ("---")
-blessingdrop()
+
 
 def the_choice():
             troopinput = input("Select a troop type to award you're item to: ")
@@ -197,4 +197,3 @@ def the_choice():
             if not troopinput in trooplist:
                 print ("This was not one of the choices. Remember, Archer, Infantry, or Cavalry.")
                 return the_choice()
-the_choice()
