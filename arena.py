@@ -124,13 +124,13 @@ def nextarenafight():
         cal()
         if mon_choicena == (1):
             print("---")
-            vs_Gobc
+            vs_zomc()
         if mon_choicena == (2):
             print("---")
-            vs_zomc
+            vs_Skelec()
         if mon_choicena == (3):
             print("---")
-            vs_Skelec
+            vs_Gobc()
         break
 
     while troopinput == ("Archer"):
@@ -138,13 +138,13 @@ def nextarenafight():
         arc()
         if mon_choicena == (1):
             print("---")
-            vs_Goba
+            vs_zoma()
         if mon_choicena == (2):
             print("---")
-            vs_zoma
+            vs_Skelea()
         if mon_choicena == (3):
             print("---")
-            vs_Skelea
+            vs_Goba()
         break
 
     while troopinput == ("Infantry"):
@@ -152,13 +152,13 @@ def nextarenafight():
         inf()
         if mon_choicena == (1):
             print("---")
-            vs_Gobi
+            vs_Gobi()
         if mon_choicena == (2):
             print("---")
-            vs_zomi
+            vs_zomi()
         if mon_choicena == (3):
             print("---")
-            vs_Skelei
+            vs_Skelei()
         break
 
     if not troopinput in trooplist:

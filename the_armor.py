@@ -31,7 +31,7 @@ Boottype = ("Armor")
 BootHealth = ("0")
 
 start = 5
-end = 15
+end = 10
 values = list(range(start, end)) 
 randomnum = (random.choice(values))
 BootSpeed= randomnum
@@ -48,7 +48,7 @@ randomnum = (random.choice(values))
 ChestplateHealth = randomnum
 
 start = 5
-end = 15
+end = 20
 values = list(range(start, end))
 randomnum = (random.choice(values))
 ChestplateSpeed = randomnum
@@ -66,12 +66,15 @@ randomnum = (random.choice(values))
 CloakHealth = randomnum
 
 start = 10
-end = 20
+end = 15
 values = list(range(start, end))
 randomnum = (random.choice(values))
 CloakSpeed = randomnum
 
 Cloak = drops ("Cloak", Cloaktype, CloakHealth, CloakSpeed )
+
+
+
 
 
 ##shield buff
@@ -143,7 +146,7 @@ def item_drop():
         trooplist = ["Cavalry", "Archer", "Infantry" ]
 
         start = 1
-        end = 4
+        end = 2
 
         values = list(range(start,end))
         global item_drop
@@ -232,6 +235,7 @@ def armorchoice():
                 print ("- Attack: ", Cavalry.attack)
                 print ("- Speed: ", Cavalry.speed )
                 print ("- Health: ", Cavalry.health)
+            break
 
         elif itemtroopinputid == ("Archer"):
             input ("You have picked the archer, its updated stats will be shown")
@@ -260,6 +264,7 @@ def armorchoice():
                 print ("- Attack: ", Archer.attack)
                 print ("- Speed: ", Archer.speed )
                 print ("- Health: ", Archer.health)
+            break
 
         if itemtroopinputid == ("Infantry"):
             input ("You have picked the infantry, its updated stats will be shown")
@@ -288,6 +293,7 @@ def armorchoice():
                 print ("- Attack: ", Infantry.attack)
                 print ("- Speed: ", Infantry.speed )
                 print ("- Health: ", Infantry.health)
+            break
 
         if not itemtroopinputid in trooplist:
             print ("This choice was not valid with your current figures. Remember, Archer, Infantry, or Cavalry.")
