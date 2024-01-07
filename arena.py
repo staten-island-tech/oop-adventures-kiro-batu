@@ -131,6 +131,7 @@ def nextarenafight():
         if mon_choicena == (3):
             print("---")
             vs_Skelec
+        break
 
     while troopinput == ("Archer"):
         print("---")
@@ -144,6 +145,7 @@ def nextarenafight():
         if mon_choicena == (3):
             print("---")
             vs_Skelea
+        break
 
     while troopinput == ("Infantry"):
         print("---")
@@ -157,12 +159,13 @@ def nextarenafight():
         if mon_choicena == (3):
             print("---")
             vs_Skelei
+        break
 
-    else:
-        print ("---")
-        print ("This choice was not valid with your current figures. Remember, Archer, Infantry, or Cavalry.")
-        input("---")
-        return nextarenafight()
+    if not troopinput in trooplist:
+            print ("---")
+            print ("This choice was not valid with your current figures. Remember, Archer, Infantry, or Cavalry.")
+            input ("---")
+            return nextarenafight()
 
 
 def minoboss():
@@ -192,14 +195,14 @@ def minoboss():
         inf()
         print("---")
         vs_Mina()
-    else:
-        print ("---")
-        print ("This choice was not valid with your current figures. Remember, Archer, Infantry, or Cavalry.")
-        input("---")
-        return minoboss()
+    if not troopinput in trooplist:
+            print ("---")
+            print ("This choice was not valid with your current figures. Remember, Archer, Infantry, or Cavalry.")
+            input ("---")
+            return minoboss()
 
 
-def nexterarena():
+def colcavern():
     start = 1
     end = 3
     
@@ -224,8 +227,9 @@ def nexterarena():
         print ("Cyclops: Attack:", Cyclops.attack)
         print ("Cyclops: Speed:", Cyclops.speed)
         print ("Cyclops: Health:", Cyclops.health)
+
     
-def nexterarenafight():
+def colcavernfight():
     troopinput = input("Select a troop type to send out into battle: ")
 
     while troopinput == ("Cavalry"):
@@ -237,7 +241,7 @@ def nexterarenafight():
         if mon_choicenea == (2):
             print("---")
             vs_Cycc
-
+        break
 
     while troopinput == ("Archer"):
         print("---")
@@ -248,6 +252,7 @@ def nexterarenafight():
         if mon_choicenea == (2):
             print("---")
             vs_Cyca
+        break
 
     while troopinput == ("Infantry"):
         print("---")
@@ -258,12 +263,15 @@ def nexterarenafight():
         if mon_choicenea == (2):
             print("---")
             vs_Cyci
+        break
     
-    else:
-        print ("---")
-        print ("This choice was not valid with your current figures. Remember, Archer, Infantry, or Cavalry.")
-        input("---")
-        return nexterarenafight()
+    if not troopinput in trooplist:
+            print ("---")
+            print ("This choice was not valid with your current figures. Remember, Archer, Infantry, or Cavalry.")
+            input ("---")
+            return colcavernfight()
+
+
 
 def GSboss ():
     input("You've encountered your first boss traveler ")
@@ -292,13 +300,13 @@ def GSboss ():
         inf()
         print("---")
         vs_GSi()
-    else:
-        print ("---")
-        print ("This choice was not valid with your current figures. Remember, Archer, Infantry, or Cavalry.")
-        input("---")
-        return GSboss()
+    if not troopinput in trooplist:
+            print ("---")
+            print ("This choice was not valid with your current figures. Remember, Archer, Infantry, or Cavalry.")
+            input ("---")
+            return GSboss()
 
-def nextererarena():
+def mountaintopofgi():
     start = 1
     end = 3
     
@@ -324,7 +332,8 @@ def nextererarena():
         print ("Yeti: Speed:", Yeti.speed)
         print ("Yeti: Health:", Yeti.health)
 
-def nextererarenafight():
+def mountaintopofgifi():
+
     troopinput = input("Select a troop type to send out into battle: ")
 
     while troopinput == ("Cavalry"):
@@ -358,11 +367,11 @@ def nextererarenafight():
             print("---")
             vs_Cyci
     
-    else:
-        print ("---")
-        print ("This choice was not valid with your current figures. Remember, Archer, Infantry, or Cavalry.")
-        input("---")
-        return nexterarenafight()
+    if not troopinput in trooplist:
+            print ("---")
+            print ("This choice was not valid with your current figures. Remember, Archer, Infantry, or Cavalry.")
+            input ("---")
+            return mountaintopofgifi()
     
 def hydraboss():
     input ("You've encountered the final servant of Nelahwrm")
@@ -392,11 +401,11 @@ def hydraboss():
         inf()
         print("---")
         vs_hydi()
-    else:
-        print ("---")
-        print ("This choice was not valid with your current figures. Remember, Archer, Infantry, or Cavalry.")
-        input("---")
-        return hydraboss()
+    if not troopinput in trooplist:
+            print ("---")
+            print ("This choice was not valid with your current figures. Remember, Archer, Infantry, or Cavalry.")
+            input ("---")
+            return hydraboss()
 
 def Nelahwrmfight():
     input ("You've stood eye to eye with Nelahwrm")
@@ -427,11 +436,11 @@ def Nelahwrmfight():
         inf()
         print("---")
         vs_wrmi()
-    else:
-        print ("---")
-        print ("This choice was not valid with your current figures. Remember, Archer, Infantry, or Cavalry.")
-        input("---")
-        return Nelahwrmfight()
+    if not troopinput in trooplist:
+            print ("---")
+            print ("This choice was not valid with your current figures. Remember, Archer, Infantry, or Cavalry.")
+            input ("---")
+            return Nelahwrmfight()
 
 
 
