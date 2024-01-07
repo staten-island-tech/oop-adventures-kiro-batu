@@ -54,10 +54,13 @@ def vs_slimec():
 
     def slime_winny():
         if len(slime_listy) > 1:
-            print ("You have beaten the Slime, good luck on your next boss")
+            print ("You have beaten the SLIME, good luck on your next FOE")
         else:
-            print ("You have lost; your figure splintered and your enemy landed a fatal blow")
-            print ("Nelahwrm's reign will continue unphased")
+            input ("You have lost ...")
+            input ("your figure ... splintered")
+            input ("... your enemy has landed a ... fatal blow")
+            input ("Nelahwrm's reign will continue unphased")
+            exit()
     slime_winny()
 
 
@@ -116,9 +119,13 @@ def vs_zomc():
 
     def zom_winny():
         if len(zom_listy) > 1:
-            print ("You have beaten the Zombie, good luck on your next boss")
+            print ("You have beaten the ZOMBIE, good luck on your next FOE")
         else:
-            print ("You have died. Start Over by rerunning the code.")
+            input ("You have lost ...")
+            input ("your figure ... splintered")
+            input ("... your enemy has landed a ... fatal blow")
+            input ("Nelahwrm's reign will continue unphased")
+            exit()
     zom_winny()
 
 
@@ -175,9 +182,13 @@ def vs_Gobc():
     
     def goblin_winny():
         if len(goblin_list) > 1:
-            print ("You have beaten the Goblin, good luck on your next boss")
+            print ("You have beaten the GOBLIN, good luck on your next FOE")
         else:
-            print ("You have died. Start Over by rerunning the code.")
+            input ("You have lost ...")
+            input ("your figure ... splintered")
+            input ("... your enemy has landed a ... fatal blow")
+            input ("Nelahwrm's reign will continue unphased")
+            exit()
     goblin_winny()
 
 
@@ -232,9 +243,13 @@ def vs_Skelec():
 
     def skele_winny():
         if len(skele_list) > 1:
-            print ("You have beaten the skeleton, good luck on your next boss")
+            print ("You have beaten the SKELETON, good luck on your next FOE")
         else:
-            print ("You have died. Try Again by rerunning the code.")
+            input ("You have lost ...")
+            input ("your figure ... splintered")
+            input ("... your enemy has landed a ... fatal blow")
+            input ("Nelahwrm's reign will continue unphased")
+            exit()
     skele_winny()
 
 
@@ -291,9 +306,13 @@ def vs_Minc():
 
     def min_winny():
         if len(min_list) > 1:
-            print ("You have beaten the Minotaur, good luck on your next boss")
+            print ("You have beaten the MINOTAUR, good luck on your next FOE")
         else:
-            print ("You have died. Try Again by rerunning the code.")
+            input ("You have lost ...")
+            input ("your figure ... splintered")
+            input ("... your enemy has landed a ... fatal blow")
+            input ("Nelahwrm's reign will continue unphased")
+            exit()
     min_winny()
 
 
@@ -348,9 +367,13 @@ def vs_Cycc():
 
     def cyc_winny():
         if len(cyc_list) > 1:
-            print ("You have beaten the Cyclops, good luck on your next boss")
+            print ("You have beaten the CYCLOPS, good luck on your next FOE")
         else:
-            print ("You have died. Try Again by rerunning the code.")
+            input ("You have lost ...")
+            input ("your figure ... splintered")
+            input ("... your enemy has landed a ... fatal blow")
+            input ("Nelahwrm's reign will continue unphased")
+            exit()
     cyc_winny()
 
 
@@ -407,9 +430,13 @@ def vs_GSc():
 
     def GS_winny():
         if len(GS_list) > 1:
-            print ("You have beaten the Giant Spider, good luck on your next boss")
+            print ("You have beaten the GIANT SPIDER, good luck on your next FOE")
         else:
-            print ("You have died. Try Again by rerunning the code.")
+            input ("You have lost ...")
+            input ("your figure ... splintered")
+            input ("... your enemy has landed a ... fatal blow")
+            input ("Nelahwrm's reign will continue unphased")
+            exit()
     GS_winny()
 
 
@@ -465,9 +492,13 @@ def vs_yec():
 
     def ye_winny():
         if len(ye_list) > 1:
-            print ("You have beaten the Yeti, good luck on your next boss")
+            print ("You have beaten the YETI, good luck on your next FOE")
         else:
-            print ("You have died. Try Again by rerunning the code.")
+            input ("You have lost ...")
+            input ("your figure ... splintered")
+            input ("... your enemy has landed a ... fatal blow")
+            input ("Nelahwrm's reign will continue unphased")
+            exit()
     ye_winny()
 
 
@@ -522,9 +553,13 @@ def vs_hydc():
 
     def hyd_winny():
         if len(hyd_list) > 1:
-            print ("You have beaten the Yeti, good luck on your next boss")
+            print ("You have beaten the HYDRA, good luck on your next FOE")
         else:
-            print ("You have died. Try Again by rerunning the code.")
+            input ("You have lost ...")
+            input ("your figure ... splintered")
+            input ("... your enemy has landed a ... fatal blow")
+            input ("Nelahwrm's reign will continue unphased")
+            exit()
     hyd_winny()
 
 
@@ -580,7 +615,15 @@ def vs_wrmc():
 
     def wrm_winny():
         if len(wrm_list) > 1:
-            print ("You have beaten the Yeti, good luck on your next boss")
+            input ("You have beaten NELAHWRM...")
+            input ("the WORLD...")
+            input ("is LIBERATED")
         else:
-            print ("You have died. Try Again by rerunning the code.")
+            input ("You have lost ...")
+            input ("your figure ... splintered")
+            input ("... your enemy has landed a ... fatal blow")
+            input ("Nelahwrm's reign will continue unphased")
+            input ("...")
+            input ("This WORLD shall know PAIN")
+            exit()
     wrm_winny()

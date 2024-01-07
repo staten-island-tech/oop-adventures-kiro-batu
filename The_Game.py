@@ -2,16 +2,23 @@
 from troops import Cavalry, Archer, Infantry
 
 ##Import the blessings
-from the_blessings import Hercules, Hermes, Artemis, blessingdrop, archer_artemis, archer_hercules, archer_hermes, infantry_artemis, infantry_hercules, infantry_hermes, cavalry_artemis, cavalry_hercules, cavalry_hermes
+from the_blessings import Hercules, Hermes, Artemis, blessingdrop, the_choice, archer_artemis, archer_hercules, archer_hermes, infantry_artemis, infantry_hercules, infantry_hermes, cavalry_artemis, cavalry_hercules, cavalry_hermes
 
 ##Import all the items
-from the_armor import Shield, Boots, Cloak, Chestplate, itemdrop, archer_boots, archer_chestplate, archer_cloak, archer_shield, infantry_chestplate, infantry_boots, infantry_shield, infantry_cloak, cavalry_boots, cavalry_chestplate, cavalry_cloak, cavalry_shield
+from the_armor import Shield, Boots, Cloak, Chestplate, item_drop, armorchoice, archer_boots, archer_chestplate, archer_cloak, archer_shield, infantry_chestplate, infantry_boots, infantry_shield, infantry_cloak, cavalry_boots, cavalry_chestplate, cavalry_cloak, cavalry_shield
+
+##function
+def logic():
+    blessingdrop()
+    the_choice()
+    item_drop()
+    armorchoice()
 
 ##Import the enemies
 from enemies import Slime, Zombie, Goblin, Skeleton, Minotaur, Cyclops, GiantSpider, Yeti, Hydra, nelahWrM
 
 ##Import all of the arenas
-from arena import beforearena, slimebattle
+from arena import beforearena, slimebattle, nextarena, nextarenafight, minoboss
 
 
 print ("---------")
@@ -45,6 +52,8 @@ def storyline():
     input ("---")
     print ("Yet these stats were random courtesy of the man who carved them")
 storyline()
+
+
 
 def intro():
     input ("---")
@@ -86,13 +95,86 @@ def nextpart():
 nextpart()
 
 def firstbattle():
-    input ("---")
     print ("As you scrambled to find your footing you fumbled through your sack to find your figures")
     print ("You're fingers felt the soft wooden figures; you returned to a sense of indomitable focus")
     input ("---")   
     beforearena()
     input ("---")
     slimebattle()
-    itemdrop()
-    print ("---")
+    logic()
+    input ("---")
 firstbattle()
+
+def secondbattle():
+    print ("You managed to make it past the battle with minimal damage")
+    print ("The SLIME was a simple yet troublesome enemy if anyone else had encountered it")
+    input ("---")
+    print ("Amazed at the newfound power of the figure, you continue to travel through the SWAMP")
+    print ("Each step was one of caution")
+    input ("---")
+    print ("The air grew heavy as your nerves tensed for evil was around the corner")
+    print ("The next of NELAHWRM's servants revealed themselves")
+    input ("---")
+    beforearena()
+    input()
+    nextarena()
+    nextarenafight()
+    logic()
+    input("---")
+    print ("Your previous enemy stood no chance")
+    print ("Yet the SWAMP grew deeper and air began to reek of rot")
+    print ("You could feel his essence grow more apparent")
+    input ("---")
+    print ("You began to sense evil")
+    print ("The next of NELAHWRM's servants revealed themselves")
+    input ("---")
+    beforearena()
+    input()
+    nextarena()
+    nextarenafight()
+    logic()
+    input("---")
+    print ("Yet again another enemy stood in shambles")
+    print ("The SWAMP clung to your legs")
+    print ("It wouldn't let go")
+    input ("---")
+    print ("The presence of evil returned")
+    print ("The next of NELAHWRM'S servants revealed themselves")
+    input ("---")
+    beforearena()
+    input()
+    nextarena()
+    nextarenafight()
+    logic()
+    input("---")
+    print ("The air grew lighter as if the SWAMP released its clutches")
+    print ("The light grew bright")
+    print ("You escaped the SWAMPY SWAMP")
+secondbattle()
+
+def mino():
+    input ("---")
+    print ("Shortly after, you found yourself in a massive field")
+    print ("The air was fresh yet evil still lingered")
+    input ("---")
+    print ("A sudden flash screamed past")
+    print ("You fell to the ground, startled at the very speed")
+    print ("You found your footing and began to search the field")
+    input ("---")
+    print ("This FOE was of a higher class")
+    input ("---")
+    beforearena()
+    input()
+    minoboss()
+    logic()
+    input ("---")
+    print ("Your figure began to wear")
+    print ("The MIGHTY MINOTAUR proved itself a capable foe")
+    print ("You earned a taste of NELAHWRM power")
+mino()
+
+    
+
+
+
+

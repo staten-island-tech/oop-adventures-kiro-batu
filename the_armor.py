@@ -137,158 +137,160 @@ def cavalry_cloak():
     print("Your cavalry's speed stat has been updated to", Cavalry.speed)
 
 
-def itemdrop():
-    global trooplist
-    trooplist = ["Cavalry", "Archer", "Infantry" ]
-    
-    start = 1
-    end = 2
-    
-    values = list(range(start,end))
-    global item_drop
-    item_drop = random.choice(values)
+def item_drop():
 
-    if item_drop == (1): 
-        print ("---")
-        print ("Congrats an item has dropped")
-        while item_drop == (1):
-            start = 1
-            end = 5
-            values = list(range(start,end))
-            global item_choice
-            item_choice = random.choice(values)
+        global trooplist
+        trooplist = ["Cavalry", "Archer", "Infantry" ]
+
+        start = 1
+        end = 4
+
+        values = list(range(start,end))
+        global item_drop
+        item_drop = random.choice(values)
+
+        if item_drop == (1): 
+            print ("---")
+            print ("Congrats an item has dropped")
+            while item_drop == (1):
+                start = 1
+                end = 5
+                values = list(range(start,end))
+                global item_choice
+                item_choice = random.choice(values)
+
+                if item_choice == (1):
+                    input ("Your prize is a shield: ")
+                    print ("---")
+                    print ("This shield can provide a buff of", ShieldHealth, "to any of your troops current Health")
+                    print ("Yet this shield also decreases the speed of your troops by", ShieldSpeed)
+                elif item_choice == (2):
+                    input ("Your prize is a chestplate: ")
+                    print ("---")
+                    print ("This chestplate can increase the health of your troops by", ChestplateHealth)
+                    print ("Although, this chestplate also decreases the speed of your troops by", ChestplateSpeed)
+                if item_choice == (3):
+                    input ("Your prize is a pair of boots: ")
+                    print ("---")
+                    print ("These pair of boots provide a buff of", BootSpeed, "to the speed of your troops")
+                elif item_choice == (4):
+                    input ("Your prize is a cloak: ")
+                    print ("---")
+                    print ("This cloak can provide a buff of", CloakHealth, "to any of your troops current Health")
+                    print ("Moreover this cloak also increase the speed of your troops by", CloakSpeed)
+                break
+            
+            while item_drop == (1): 
+                print ("---")
+                input("Before making a decision the stats of all your troops will be shown: ")
+                print ("---")
+                print ("- Cavalry: Attack: ", Cavalry.attack)
+                print ("- Cavalry: Speed: ", Cavalry.speed )
+                print ("- Cavalry: Health: ", Cavalry.health)
+                print ("---")
+                print ("- Archer: Attack: ", Archer.attack)
+                print ("- Archer: Speed: ", Archer.speed )
+                print ("- Archer: Health: ", Archer.health)
+                print ("---")
+                print ("- Infantry: Attack: ", Infantry.attack)
+                print ("- Infantry: Speed: ", Infantry.speed )
+                print ("- Infantry: Health: ", Infantry.health)
+                print ("---")
+                break
+
+
+
+def armorchoice():
+    while item_drop == (1):
+        itemtroopinputid = input("Select a troop type to award you're item to: ")
+        print("---")
+
+        if itemtroopinputid == ("Cavalry"):
+            input ("You have picked the cavalry, its updated stats will be shown")
+            print ("---")
             if item_choice == (1):
-                input ("Your prize is a shield")
+                cavalry_shield()
                 print ("---")
-                print ("This shield can provide a buff of", ShieldHealth, "to any of your troops current Health")
-                print ("Yet this shield also decreases the speed of your troops by", ShieldSpeed)
+                print ("- Attack: ", Cavalry.attack)
+                print ("- Speed: ", Cavalry.speed )
+                print ("- Health: ", Cavalry.health)
             elif item_choice == (2):
-                input ("Your prize is a chestplate")
+                cavalry_chestplate()
                 print ("---")
-                print ("This chestplate can increase the health of your troops by", ChestplateHealth)
-                print ("Although, this chestplate also decreases the speed of your troops by", ChestplateSpeed)
+                print ("- Attack: ", Cavalry.attack)
+                print ("- Speed: ", Cavalry.speed )
+                print ("- Health: ", Cavalry.health)
             if item_choice == (3):
-                input ("Your prize is a pair of boots")
+                cavalry_boots()
                 print ("---")
-                print ("These pair of boots provide a buff of", BootSpeed, "to the speed of your troops")
+                print ("- Attack: ", Cavalry.attack)
+                print ("- Speed: ", Cavalry.speed )
+                print ("- Health: ", Cavalry.health)
             elif item_choice == (4):
-                input ("Your prize is a cloak")
+                cavalry_cloak()
                 print ("---")
-                print ("This cloak can provide a buff of", CloakHealth, "to any of your troops current Health")
-                print ("Moreover this cloak also increase the speed of your troops by", CloakSpeed)
-            break
+                print ("- Attack: ", Cavalry.attack)
+                print ("- Speed: ", Cavalry.speed )
+                print ("- Health: ", Cavalry.health)
+
+        elif itemtroopinputid == ("Archer"):
+            input ("You have picked the archer, its updated stats will be shown")
+            print ("---")
+            if item_choice == (1):
+                archer_shield()
+                print ("---")
+                print ("- Attack: ", Archer.attack)
+                print ("- Speed: ", Archer.speed )
+                print ("- Health: ", Archer.health)
+            elif item_choice == (2):
+                archer_chestplate()
+                print ("---")
+                print ("- Attack: ", Archer.attack)
+                print ("- Speed: ", Archer.speed )
+                print ("- Health: ", Archer.health)
+            if item_choice == (3):
+                archer_boots()
+                print ("---")
+                print ("- Attack: ", Archer.attack)
+                print ("- Speed: ", Archer.speed )
+                print ("- Health: ", Archer.health)
+            elif item_choice == (4):
+                archer_cloak()
+                print ("---")
+                print ("- Attack: ", Archer.attack)
+                print ("- Speed: ", Archer.speed )
+                print ("- Health: ", Archer.health)
+
+        if itemtroopinputid == ("Infantry"):
+            input ("You have picked the infantry, its updated stats will be shown")
+            print ("---")
+            if item_choice == (1):
+                infantry_shield()
+                print ("---")
+                print ("- Attack: ", Infantry.attack)
+                print ("- Speed: ", Infantry.speed )
+                print ("- Health: ", Infantry.health)
+            elif item_choice == (2):
+                infantry_chestplate()
+                print ("---")
+                print ("- Attack: ", Infantry.attack)
+                print ("- Speed: ", Infantry.speed )
+                print ("- Health: ", Infantry.health)
+            if item_choice == (3):
+                infantry_boots()
+                print ("---")
+                print ("- Attack: ", Infantry.attack)
+                print ("- Speed: ", Infantry.speed )
+                print ("- Health: ", Infantry.health)
+            elif item_choice == (4):
+                infantry_cloak()
+                print ("---")
+                print ("- Attack: ", Infantry.attack)
+                print ("- Speed: ", Infantry.speed )
+                print ("- Health: ", Infantry.health)
+
+        if not itemtroopinputid in trooplist:
+            print ("This choice was not valid with your current figures. Remember, Archer, Infantry, or Cavalry.")
+            return armorchoice()
         
-        while item_drop == (1): 
-            print ("---")
-            input("Before making a decision the stats of all your troops will be shown: ")
-            print ("---")
-            print ("- Cavalry: Attack: ", Cavalry.attack)
-            print ("- Cavalry: Speed: ", Cavalry.speed )
-            print ("- Cavalry: Health: ", Cavalry.health)
-            print ("---")
-            print ("- Archer: Attack: ", Archer.attack)
-            print ("- Archer: Speed: ", Archer.speed )
-            print ("- Archer: Health: ", Archer.health)
-            print ("---")
-            print ("- Infantry: Attack: ", Infantry.attack)
-            print ("- Infantry: Speed: ", Infantry.speed )
-            print ("- Infantry: Health: ", Infantry.health)
-            print ("---")
-            break
-itemdrop()
 
-def armor_choice():
-    itemtroopinput = input("Select a troop type to award you're item to: ")
-    print("---")
-
-    if itemtroopinput == ("Cavalry"):
-        input ("You have picked the cavalry, its updated stats will be shown")
-        print ("---")
-        if item_choice == (1):
-            cavalry_shield()
-            print ("---")
-            print ("- Attack: ", Cavalry.attack)
-            print ("- Speed: ", Cavalry.speed )
-            print ("- Health: ", Cavalry.health)
-        elif item_choice == (2):
-            cavalry_chestplate()
-            print ("---")
-            print ("- Attack: ", Cavalry.attack)
-            print ("- Speed: ", Cavalry.speed )
-            print ("- Health: ", Cavalry.health)
-        if item_choice == (3):
-            cavalry_boots()
-            print ("---")
-            print ("- Attack: ", Cavalry.attack)
-            print ("- Speed: ", Cavalry.speed )
-            print ("- Health: ", Cavalry.health)
-        elif item_choice == (4):
-            cavalry_cloak()
-            print ("---")
-            print ("- Attack: ", Cavalry.attack)
-            print ("- Speed: ", Cavalry.speed )
-            print ("- Health: ", Cavalry.health)
-      
-
-    
-    elif itemtroopinput == ("Archer"):
-        input ("You have picked the archer, its updated stats will be shown")
-        print ("---")
-        if item_choice == (1):
-            archer_shield()
-            print ("---")
-            print ("- Attack: ", Archer.attack)
-            print ("- Speed: ", Archer.speed )
-            print ("- Health: ", Archer.health)
-        elif item_choice == (2):
-            archer_chestplate()
-            print ("---")
-            print ("- Attack: ", Archer.attack)
-            print ("- Speed: ", Archer.speed )
-            print ("- Health: ", Archer.health)
-        if item_choice == (3):
-            archer_boots()
-            print ("---")
-            print ("- Attack: ", Archer.attack)
-            print ("- Speed: ", Archer.speed )
-            print ("- Health: ", Archer.health)
-        elif item_choice == (4):
-            archer_cloak()
-            print ("---")
-            print ("- Attack: ", Archer.attack)
-            print ("- Speed: ", Archer.speed )
-            print ("- Health: ", Archer.health)
-
-
-    if itemtroopinput == ("Infantry"):
-        input ("You have picked the infantry, its updated stats will be shown")
-        print ("---")
-        if item_choice == (1):
-            infantry_shield()
-            print ("---")
-            print ("- Attack: ", Infantry.attack)
-            print ("- Speed: ", Infantry.speed )
-            print ("- Health: ", Infantry.health)
-        elif item_choice == (2):
-            infantry_chestplate()
-            print ("---")
-            print ("- Attack: ", Infantry.attack)
-            print ("- Speed: ", Infantry.speed )
-            print ("- Health: ", Infantry.health)
-        if item_choice == (3):
-            infantry_boots()
-            print ("---")
-            print ("- Attack: ", Infantry.attack)
-            print ("- Speed: ", Infantry.speed )
-            print ("- Health: ", Infantry.health)
-        elif item_choice == (4):
-            infantry_cloak()
-            print ("---")
-            print ("- Attack: ", Infantry.attack)
-            print ("- Speed: ", Infantry.speed )
-            print ("- Health: ", Infantry.health)
-
-    if not itemtroopinput in trooplist:
-        print ("This was not one of the choices. Remember, Archer, Infantry, or Cavalry.")
-        return armor_choice()
-armor_choice()
