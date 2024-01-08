@@ -152,13 +152,13 @@ def nextarenafight():
         inf()
         if mon_choicena == (1):
             print("---")
-            vs_Gobi()
+            vs_zomi()
         if mon_choicena == (2):
             print("---")
-            vs_zomi()
+            vs_Skelei()
         if mon_choicena == (3):
             print("---")
-            vs_Skelei()
+            vs_Gobi()
         break
 
     if not troopinput in trooplist:
@@ -345,6 +345,7 @@ def mountaintopofgifi():
         if mon_choiceneea == (2):
             print("---")
             vs_Cycc
+        break
 
 
     while troopinput == ("Archer"):
@@ -356,6 +357,7 @@ def mountaintopofgifi():
         if mon_choiceneea == (2):
             print("---")
             vs_Cyca
+        break
 
     while troopinput == ("Infantry"):
         print("---")
@@ -366,6 +368,7 @@ def mountaintopofgifi():
         if mon_choiceneea == (2):
             print("---")
             vs_Cyci
+        break
     
     if not troopinput in trooplist:
             print ("---")

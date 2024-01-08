@@ -6,6 +6,14 @@ class troops:
         self.attack = attack
         self.speed = speed
         self.health = health
+        
+        if self.attack < (0):
+            self.attack = 0
+        if self.speed < (0):
+            self.speed = 0
+        if self.health < (0):
+            self.health = 0
+     
 
 #for the archers
 start = 10
@@ -62,26 +70,6 @@ Archer = troops ('Archers', archer_randomattack, archer_randomspeed, archer_rand
 Infantry = troops ('Infantry', infantry_randomattack, infantry_randomspeed, infantry_randomhealth)
 Cavalry = troops ('Cavalry', cavalry_randomattack, cavalry_randomspeed, cavalry_randomhealth)
 
-if Archer.attack < (0):
-    Archer.attack = 0
-if Archer.health < (0):
-    Archer.health = 0
-if Archer.speed < (0):
-    Archer.speed = 0
-
-if Infantry.attack < (0):
-    Infantry.attack = 0
-if Infantry.health < (0):
-    Infantry.health = 0
-if Infantry.speed < (0):
-    Infantry.speed = 0
-
-if Cavalry.attack < (0):
-    Cavalry.attack = 0
-if Cavalry.health < (0):
-    Cavalry.health = 0
-if Cavalry.speed < (0):
-    Cavalry.speed = 0
 
 
 
