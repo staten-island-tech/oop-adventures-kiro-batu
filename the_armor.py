@@ -146,7 +146,7 @@ def item_drop():
         trooplist = ["Cavalry", "Archer", "Infantry" ]
 
         start = 1
-        end = 2
+        end = 4
 
         values = list(range(start,end))
         global item_drop
