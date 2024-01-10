@@ -43,7 +43,7 @@ def beforearena():
     print ("- Infantry: Speed: ", Infantry.speed )
     print ("- Infantry: Health: ", Infantry.health)
 
-def slimebattle(self):
+def slimebattle():
     trooplist = ["Cavalry", "Archer", "Infantry" ]
 
     input ("You're now engaged within a battle with the devilish SLIME ")
@@ -116,7 +116,7 @@ def nextarena():
         print ("Goblin: Speed:", Goblin.speed)
         print ("Goblin: Health:", Goblin.health)
     
-def nextarenafight(self):
+def nextarenafight():
     troopinput = input("Select a troop type to send out into battle: ")
 
     while troopinput == ("Cavalry"):

@@ -8,11 +8,11 @@ class troops:
         self.health = health
         
         if self.attack < (0):
-            self.attack = 0
+            self.attack == (0)
         if self.speed < (0):
-            self.speed = 0
+            self.speed == (0)
         if self.health < (0):
-            self.health = 0
+            self.health == (0)
      
 
 class Archerrandom():

@@ -1,6 +1,7 @@
 ## Import the types of troops
 from troops import Cavalry, Archer, Infantry
 
+
 ##Import the blessings
 from the_blessings import Hercules, Hermes, Artemis, blessingdrop, the_choice, archer_artemis, archer_hercules, archer_hermes, infantry_artemis, infantry_hercules, infantry_hermes, cavalry_artemis, cavalry_hercules, cavalry_hermes
 
