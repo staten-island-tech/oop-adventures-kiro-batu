@@ -39,7 +39,7 @@ Artemisbuff = randomnum
 
 Artemis = blessing("Artemis", 0, 0, Artemisbuff)
 
-##attack buff
+
 def archer_artemis():
     Archer.attack += Artemis.attack
     print("Your archer's attack stat has been updated to", Archer.attack)

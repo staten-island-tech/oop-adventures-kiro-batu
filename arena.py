@@ -4,9 +4,9 @@ from troops import Cavalry, Archer, Infantry
 
 ##Import the enemies
 from enemies import Slime, Zombie, Goblin, Skeleton, Minotaur, Cyclops, GiantSpider, Yeti, Hydra, nelahWrM
-from __archer import  vs_slimea, vs_Goba, vs_zoma, vs_Skelea, vs_Mina, vs_Cyca, vs_hyda, vs_GSa, vs_wrma, vs_yea, slime_defeat, troopslime
-from __infantry import   vs_slimei, vs_Gobi, vs_zomi, vs_Skelei, vs_Mini, vs_Cyci, vs_hydi, vs_GSi, vs_wrmi, vs_yei, slime_defeat, troopslime
-from __cavalry import vs_slimec, vs_Gobc, vs_zomc, vs_Skelec, vs_Minc, vs_Cycc, vs_hydc, vs_GSc, vs_wrmc, vs_yec, slime_defeat, troopslime
+from __archer import  Archerfi
+from __infantry import   Infanfi
+from __cavalry import Cavfi
 
 trooplist = ["Cavalry", "Archer", "Infantry" ]
 troopinput = ("Select a troop type to send out into battle: ")
@@ -43,7 +43,7 @@ def beforearena():
     print ("- Infantry: Speed: ", Infantry.speed )
     print ("- Infantry: Health: ", Infantry.health)
 
-def slimebattle():
+def slimebattle(self):
     trooplist = ["Cavalry", "Archer", "Infantry" ]
 
     input ("You're now engaged within a battle with the devilish SLIME ")
@@ -60,17 +60,17 @@ def slimebattle():
         print("---")
         cal()
         print("---")
-        vs_slimec()
+        Cavfi.vs_slimec()
     elif troopinput == ("Archer"):
         print("---")
         arc()
         print("---")
-        vs_slimea()
+        Archerfi.vs_slimea()
     if troopinput == ("Infantry"):
         print("---")
         inf()
         print("---")
-        vs_slimei()
+        Infanfi.vs_slimei()
 
     if not troopinput in trooplist:
             print ("---")
@@ -116,7 +116,7 @@ def nextarena():
         print ("Goblin: Speed:", Goblin.speed)
         print ("Goblin: Health:", Goblin.health)
     
-def nextarenafight():
+def nextarenafight(self):
     troopinput = input("Select a troop type to send out into battle: ")
 
     while troopinput == ("Cavalry"):
@@ -124,13 +124,13 @@ def nextarenafight():
         cal()
         if mon_choicena == (1):
             print("---")
-            vs_zomc()
+            Cavfi.vs_zomc()
         if mon_choicena == (2):
             print("---")
-            vs_Skelec()
+            Cavfi.vs_Skelec()
         if mon_choicena == (3):
             print("---")
-            vs_Gobc()
+            Cavfi.vs_Gobc()
         break
 
     while troopinput == ("Archer"):
@@ -138,13 +138,13 @@ def nextarenafight():
         arc()
         if mon_choicena == (1):
             print("---")
-            vs_zoma()
+            Archerfi.vs_zoma()
         if mon_choicena == (2):
             print("---")
-            vs_Skelea()
+            Archerfi.vs_Skelea()
         if mon_choicena == (3):
             print("---")
-            vs_Goba()
+            Archerfi.vs_Goba()
         break
 
     while troopinput == ("Infantry"):
@@ -152,13 +152,13 @@ def nextarenafight():
         inf()
         if mon_choicena == (1):
             print("---")
-            vs_zomi()
+            Infanfi.vs_zomi()
         if mon_choicena == (2):
             print("---")
-            vs_Skelei()
+            Infanfi.vs_Skelei()
         if mon_choicena == (3):
             print("---")
-            vs_Gobi()
+            Infanfi.vs_Gobi()
         break
 
     if not troopinput in trooplist:
@@ -184,17 +184,17 @@ def minoboss():
         print("---")
         cal()
         print("---")
-        vs_Minc()
+        Cavfi.vs_Minc()
     elif troopinput == ("Archer"):
         print("---")
         arc()
         print("---")
-        vs_Mina()
+        Archerfi.vs_Mina()
     if troopinput == ("Infantry"):
         print("---")
         inf()
         print("---")
-        vs_Mina()
+        Infanfi.vs_Mini()
     if not troopinput in trooplist:
             print ("---")
             print ("This choice was not valid with your current figures. Remember, Archer, Infantry, or Cavalry.")
@@ -237,10 +237,10 @@ def colcavernfight():
         cal()
         if mon_choicenea == (1):
             print("---")
-            vs_Minc
+            Cavfi.vs_Minc
         if mon_choicenea == (2):
             print("---")
-            vs_Cycc
+            Cavfi.vs_Cycc
         break
 
     while troopinput == ("Archer"):
@@ -248,10 +248,10 @@ def colcavernfight():
         arc()
         if mon_choicenea == (1):
             print("---")
-            vs_Mina
+            Archerfi.vs_Mina
         if mon_choicenea == (2):
             print("---")
-            vs_Cyca
+            Archerfi.vs_Cyca
         break
 
     while troopinput == ("Infantry"):
@@ -259,10 +259,10 @@ def colcavernfight():
         inf()
         if mon_choicenea == (1):
             print("---")
-            vs_Mini
+            Infanfi.vs_Mini
         if mon_choicenea == (2):
             print("---")
-            vs_Cyci
+            Infanfi.vs_Cyci
         break
     
     if not troopinput in trooplist:
@@ -289,17 +289,17 @@ def GSboss ():
         print("---")
         cal()
         print("---")
-        vs_GSc()
+        Cavfi.vs_GSc()
     elif troopinput == ("Archer"):
         print("---")
         arc()
         print("---")
-        vs_GSa()
+        Archerfi.vs_GSa()
     if troopinput == ("Infantry"):
         print("---")
         inf()
         print("---")
-        vs_GSi()
+        Infanfi.vs_GSi()
     if not troopinput in trooplist:
             print ("---")
             print ("This choice was not valid with your current figures. Remember, Archer, Infantry, or Cavalry.")
@@ -341,10 +341,10 @@ def mountaintopofgifi():
         cal()
         if mon_choicenea == (1):
             print("---")
-            vs_Minc
+            Cavfi.vs_Minc
         if mon_choiceneea == (2):
             print("---")
-            vs_Cycc
+            Cavfi.vs_Cycc
         break
 
 
@@ -353,10 +353,10 @@ def mountaintopofgifi():
         arc()
         if mon_choiceneea == (1):
             print("---")
-            vs_Mina
+            Archerfi.vs_Mina
         if mon_choiceneea == (2):
             print("---")
-            vs_Cyca
+            Archerfi.vs_Cyca
         break
 
     while troopinput == ("Infantry"):
@@ -364,10 +364,10 @@ def mountaintopofgifi():
         inf()
         if mon_choiceneea == (1):
             print("---")
-            vs_Mini
+            Infanfi.vs_Mini
         if mon_choiceneea == (2):
             print("---")
-            vs_Cyci
+            Infanfi.vs_Cyci
         break
     
     if not troopinput in trooplist:
@@ -393,17 +393,17 @@ def hydraboss():
         print("---")
         cal()
         print("---")
-        vs_hydc()
+        Cavfi.vs_hydc()
     elif troopinput == ("Archer"):
         print("---")
         arc()
         print("---")
-        vs_hyda()
+        Archerfi.vs_hyda()
     if troopinput == ("Infantry"):
         print("---")
         inf()
         print("---")
-        vs_hydi()
+        Infanfi.vs_hydi()
     if not troopinput in trooplist:
             print ("---")
             print ("This choice was not valid with your current figures. Remember, Archer, Infantry, or Cavalry.")
@@ -428,17 +428,17 @@ def Nelahwrmfight():
         print("---")
         cal()
         print("---")
-        vs_wrmc()
+        Cavfi.vs_wrmc()
     elif troopinput == ("Archer"):
         print("---")
         arc()
         print("---")
-        vs_wrma()
+        Archerfi.vs_wrma()
     if troopinput == ("Infantry"):
         print("---")
         inf()
         print("---")
-        vs_wrmi()
+        Infanfi.vs_wrmi()
     if not troopinput in trooplist:
             print ("---")
             print ("This choice was not valid with your current figures. Remember, Archer, Infantry, or Cavalry.")
