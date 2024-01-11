@@ -124,6 +124,9 @@ def secondbattle():
     nextarena()
     nextarenafight()
     logic()
+secondbattle()
+
+def seconderbattle():
     input("---")
     print ("Your previous enemy stood no chance")
     print ("Yet the SWAMP grew deeper and air began to reek of rot")
@@ -137,6 +140,9 @@ def secondbattle():
     nextarena()
     nextarenafight()
     logic()
+seconderbattle()
+
+def secondishbattle():
     input("---")
     print ("Yet again another enemy stood in shambles")
     print ("The SWAMP clung to your legs")
@@ -154,7 +160,7 @@ def secondbattle():
     print ("The air grew lighter as if the SWAMP released its clutches")
     print ("The light grew bright")
     print ("You escaped the SWAMPY SWAMP")
-secondbattle()
+secondishbattle()
 
 def mino():
     input ("---")
@@ -210,6 +216,9 @@ def mountarena():
     colcavern()
     colcavernfight()
     logic()
+mountarena()
+
+def mounterarena():
     input ("---")
     print ("Definetely a formidable foe, yet it's corruption still crumbled")
     print ("The scale of the enemies had truly grew")
@@ -225,7 +234,7 @@ def mountarena():
     logic()
     print ("The air grew cold, as draft ran through")
     print ("The COLASSAL CAVERN was liberated")
-mountarena()
+mounterarena()
 
 def spider():
     input("---")
@@ -269,6 +278,9 @@ def spinemon():
     mountaintopofgi()
     mountaintopofgifi()
     logic()
+spinemon()
+
+def spineermon():
     input("---")
     print("The climb exanded in intensity as you began to gasp for breath")
     print("The air was cold and sucked the warmth from your body")
@@ -287,7 +299,7 @@ def spinemon():
     print("A distant roaring could be heard")
     print("A sudden bolt a flame lit up the sky")
     print("A silhouette of 6 wings was revealed")
-spinemon()
+spineermon()
 
 def Hydrafi():
     input("---")
