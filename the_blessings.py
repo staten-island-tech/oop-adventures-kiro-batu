@@ -70,7 +70,7 @@ def infantry_hercules():
     print("Your infantry's health stat has been updated to", Infantry.health)
 def cavalry_hercules():
     Cavalry.attack += Hercules.defense
-    print("Your cavalry's attack stat has been updated to", Cavalry.health)
+    print("Your cavalry's health stat has been updated to", Cavalry.health)
 
 trooplist = ["Cavalry", "Archer", "Infantry" ]
 
