@@ -72,18 +72,15 @@ def cavalry_hercules():
     Cavalry.attack += Hercules.defense
     print("Your cavalry's health stat has been updated to", Cavalry.health)
 
-<<<<<<< HEAD
 trooplist = ["Cavalry", "Archer", "Infantry" ]
 
 
 
 def blessingdrop():
     start = 1
-<<<<<<< HEAD
-    end = 5
-=======
+
     end = 9
->>>>>>> Numbers
+
     values = list(range(start,end))
     global item_drop
     item_drop = random.choice(values)
@@ -208,5 +205,3 @@ def the_choice():
                 print ("This choice was not valid with your current figures. Remember, Archer, Infantry, or Cavalry.")
                 return the_choice()
 
-=======
->>>>>>> Blessings
