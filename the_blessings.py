@@ -76,7 +76,7 @@ def itemdrop():
     trooplist = ["Cavalry", "Archer", "Infantry" ]
     
     start = 1
-    end = 6
+    end = 9
     values = list(range(start,end))
     item_drop = random.choice(values)
     if item_drop == (1): 
