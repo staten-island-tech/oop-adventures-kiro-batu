@@ -316,6 +316,7 @@ def Hydrafi():
     print ("A shining ray of purple gleamed from the top")
     input ("---")
     print ("Nelahwrm was sure to be there")
+Hydrafi()
 
 def NelahWrMfi():
     input ("---")

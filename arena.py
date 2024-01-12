@@ -237,10 +237,10 @@ def colcavernfight():
         cal()
         if mon_choicenea == (1):
             print("---")
-            Cavfi.vs_Minc
+            Cavfi.vs_Minc()
         if mon_choicenea == (2):
             print("---")
-            Cavfi.vs_Cycc
+            Cavfi.vs_Cycc()
         break
 
     while troopinput == ("Archer"):
@@ -248,10 +248,10 @@ def colcavernfight():
         arc()
         if mon_choicenea == (1):
             print("---")
-            Archerfi.vs_Mina
+            Archerfi.vs_Mina()
         if mon_choicenea == (2):
             print("---")
-            Archerfi.vs_Cyca
+            Archerfi.vs_Cyca()
         break
 
     while troopinput == ("Infantry"):
@@ -259,10 +259,10 @@ def colcavernfight():
         inf()
         if mon_choicenea == (1):
             print("---")
-            Infanfi.vs_Mini
+            Infanfi.vs_Mini()
         if mon_choicenea == (2):
             print("---")
-            Infanfi.vs_Cyci
+            Infanfi.vs_Cyci()
         break
     
     if not troopinput in trooplist:
@@ -341,10 +341,10 @@ def mountaintopofgifi():
         cal()
         if mon_choicenea == (1):
             print("---")
-            Cavfi.vs_Minc
+            Cavfi.vs_Minc()
         if mon_choiceneea == (2):
             print("---")
-            Cavfi.vs_Cycc
+            Cavfi.vs_Cycc()
         break
 
 
@@ -353,10 +353,10 @@ def mountaintopofgifi():
         arc()
         if mon_choiceneea == (1):
             print("---")
-            Archerfi.vs_Mina
+            Archerfi.vs_Mina()
         if mon_choiceneea == (2):
             print("---")
-            Archerfi.vs_Cyca
+            Archerfi.vs_Cyca()
         break
 
     while troopinput == ("Infantry"):
@@ -364,10 +364,10 @@ def mountaintopofgifi():
         inf()
         if mon_choiceneea == (1):
             print("---")
-            Infanfi.vs_Mini
+            Infanfi.vs_Mini()
         if mon_choiceneea == (2):
             print("---")
-            Infanfi.vs_Cyci
+            Infanfi.vs_Cyci()
         break
     
     if not troopinput in trooplist:

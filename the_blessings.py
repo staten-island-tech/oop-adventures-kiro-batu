@@ -56,10 +56,10 @@ def archer_hermes():
     print("Your archer's speed stat has been updated to", Archer.speed)
 def infantry_hermes():
     Infantry.speed += Hermes.speed
-    print("Your infantry's attack stat has been updated to", Infantry.speed)
+    print("Your infantry's speed stat has been updated to", Infantry.speed)
 def cavalry_hermes():
     Cavalry.speed += Hermes.speed
-    print("Your cavalry's attack stat has been updated to", Cavalry.speed)
+    print("Your cavalry's speed stat has been updated to", Cavalry.speed)
 
 ##health Buff
 def archer_hercules():
@@ -78,7 +78,7 @@ trooplist = ["Cavalry", "Archer", "Infantry" ]
 
 def blessingdrop():
     start = 1
-    end = 5
+    end = 9
     values = list(range(start,end))
     global item_drop
     item_drop = random.choice(values)
@@ -105,7 +105,7 @@ def blessingdrop():
             if item_choice == (3):
                 input ("Hercules has offered to bless one of your troops: ")
                 print ("---")
-                print ("This charm channel his mighty strength and provides a buff of", Herculesbuff, "to the Attack of your troops")
+                print ("This charm channel his mighty vitality and provides a buff of", Herculesbuff, "to the Health of your troops")
             break
 
         if item_drop == (1):

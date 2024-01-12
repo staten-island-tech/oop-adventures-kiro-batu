@@ -6,13 +6,16 @@ class troops:
         self.attack = attack
         self.speed = speed
         self.health = health
-        
+
+    def balancer(self):
         if self.attack < (0):
             self.attack == (0)
         if self.speed < (0):
             self.speed == (0)
         if self.health < (0):
             self.health == (0)
+
+
      
 
 class Archerrandom():
@@ -70,6 +73,7 @@ class Cavalryrandom():
 
     start = 5
     end = 15
+    
     values = list(range(start,end))
     randomhealth= random.choice(values)
     global cavalry_randomhealth
