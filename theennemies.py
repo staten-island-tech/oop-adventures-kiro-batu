@@ -16,4 +16,3 @@ Yeti = The_Enemies ('Yeti', 30, 30, 15)
 Hydra = The_Enemies ('Hydra', 40, 40, 40)
 nelahWrM = The_Enemies ('nelahWrM', 50, 50, 50)
 
-print (GiantSpider.health)
