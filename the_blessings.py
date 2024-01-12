@@ -78,7 +78,13 @@ trooplist = ["Cavalry", "Archer", "Infantry" ]
 
 def blessingdrop():
     start = 1
+<<<<<<< HEAD
     end = 9
+=======
+
+    end = 9
+
+>>>>>>> 796c657699dac484d0efb6db6af0cb6028bccd38
     values = list(range(start,end))
     global item_drop
     item_drop = random.choice(values)

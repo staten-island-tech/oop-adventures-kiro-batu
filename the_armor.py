@@ -140,6 +140,7 @@ def cavalry_cloak():
     print("Your cavalry's speed stat has been updated to", Cavalry.speed)
 
 
+<<<<<<< HEAD
 def item_drop():
 
         global trooplist
@@ -211,6 +212,23 @@ def armorchoice():
         if itemtroopinputid == ("Cavalry"):
             input ("You have picked the cavalry, its updated stats will be shown")
             print ("---")
+=======
+def itemdrop():
+    trooplist = ["Cavalry", "Archer", "Infantry" ]
+    
+    start = 1
+    end = 6
+    values = list(range(start,end))
+    item_drop = random.choice(values)
+    if item_drop == (1): 
+        print ("---")
+        print ("Congrats an item has dropped")
+        while item_drop == (1):
+            start = 1
+            end = 5
+            values = list(range(start,end))
+            item_choice = random.choice(values)
+>>>>>>> Numbers
             if item_choice == (1):
                 cavalry_shield()
                 print ("---")

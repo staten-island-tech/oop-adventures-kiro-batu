@@ -89,3 +89,5 @@ Cavalry = troops ('Cavalry', cavalry_randomattack, cavalry_randomspeed, cavalry_
 
 
 
+
+
