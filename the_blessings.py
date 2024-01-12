@@ -72,6 +72,7 @@ def cavalry_hercules():
     Cavalry.attack += Hercules.defense
     print("Your cavalry's health stat has been updated to", Cavalry.health)
 
+<<<<<<< HEAD
 trooplist = ["Cavalry", "Archer", "Infantry" ]
 
 
@@ -207,3 +208,5 @@ def the_choice():
                 print ("This choice was not valid with your current figures. Remember, Archer, Infantry, or Cavalry.")
                 return the_choice()
 
+=======
+>>>>>>> Blessings

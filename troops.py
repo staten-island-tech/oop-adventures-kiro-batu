@@ -78,7 +78,7 @@ class Cavalryrandom():
 =======
 #for the archers
 start = 10
-end = 15
+end =15
 values = list(range(start,end))
 archer_randomattack= random.choice(values)
 
@@ -136,5 +136,7 @@ Cavalry = troops ('Cavalry', cavalry_randomattack, cavalry_randomspeed, cavalry_
 
 
 
+
+print (Archer.attack, Infantry.speed, Cavalry.health)
 
 
