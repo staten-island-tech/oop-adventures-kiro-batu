@@ -19,7 +19,7 @@ def logic():
 
 
 ##Import the enemies
-from enemies import Slime, Zombie, Goblin, Skeleton, Minotaur, Cyclops, GiantSpider, Yeti, Hydra, nelahWrM
+from theenemies import Slime, Zombie, Goblin, Skeleton, Minotaur, Cyclops, GiantSpider, Yeti, Hydra, nelahWrM
 
 ##Import all of the arenas
 from arena import beforearena, slimebattle, nextarena, nextarenafight, minoboss, colcavern, colcavernfight, GSboss, mountaintopofgi, mountaintopofgifi, hydraboss, Nelahwrmfight

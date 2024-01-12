@@ -1,5 +1,5 @@
 from troops import Cavalry
-from enemies import Slime, Zombie, Goblin, Skeleton, Minotaur, Cyclops, GiantSpider, Yeti, Hydra, nelahWrM
+from theenemies import Slime, Zombie, Goblin, Skeleton, Minotaur, Cyclops, GiantSpider, Yeti, Hydra, nelahWrM
 
 slime_defeat = []
 troopslime = ["Cavalry", "Archer", "Infantry" ]

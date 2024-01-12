@@ -1,5 +1,5 @@
 from troops import Archer
-from enemies import Slime, Zombie, Goblin, Skeleton, Minotaur, Cyclops, GiantSpider, Yeti, Hydra, nelahWrM
+from theenemies import Slime, Zombie, Goblin, Skeleton, Minotaur, Cyclops, GiantSpider, Yeti, Hydra, nelahWrM
 
 
 slime_defeat = []
@@ -364,7 +364,6 @@ class Archerfi():
 
         input ("---")
 
-<<<<<<< HEAD
         def cyc_winny():
             if len(cyc_list) > 1:
                 print ("You have beaten the CYCLOPS, good luck on your next FOE")
@@ -375,14 +374,6 @@ class Archerfi():
                 input ("Nelahwrm's reign will continue unphased")
                 exit()
         cyc_winny()
-=======
-    def hyd_winny():
-        if len(hyd_list) > 1:
-            print ("You have beaten the Hydra, good luck on your next boss")
-        else:
-            print ("You have died. Try Again by rerunning the code.")
-    hyd_winny()
->>>>>>> Numbers
 
 
 
@@ -425,16 +416,6 @@ class Archerfi():
         print ("Here is The Giant Spider's speed", GiantSpider.speed)
         print ("Here are your Archers speed", Archer.speed) 
 
-<<<<<<< HEAD
-=======
-    def compare_wrm_speed():
-        if Archer.speed > nelahWrM.speed:
-            print ("You have won this stat, your fate will be revealed.")
-            wrm_list.append ("1")
-        else:
-            print ("You lost for this stat, your fate will be revealed")
-    compare_wrm_speed()
->>>>>>> Numbers
 
         def compare_GS_speed():
             if Archer.speed > GiantSpider.speed:
@@ -444,7 +425,6 @@ class Archerfi():
                 print ("You lost for this stat, your fate will be revealed")
         compare_GS_speed()
 
-<<<<<<< HEAD
         input ("---")
 
         def GS_winny():
@@ -646,11 +626,3 @@ class Archerfi():
                 input ("This WORLD shall know PAIN")
                 exit()
         wrm_winny()
-=======
-    def wrm_winny():
-        if len(wrm_list) > 1:
-            print ("You have beaten the nelahWrM, you have won!")
-        else:
-            print ("You have died. Try Again by rerunning the code.")
-    wrm_winny()
->>>>>>> Numbers

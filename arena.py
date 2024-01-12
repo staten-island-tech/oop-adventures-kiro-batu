@@ -3,7 +3,7 @@ import random
 from troops import Cavalry, Archer, Infantry
 
 ##Import the enemies
-from enemies import Slime, Zombie, Goblin, Skeleton, Minotaur, Cyclops, GiantSpider, Yeti, Hydra, nelahWrM
+from theenemies import Slime, Zombie, Goblin, Skeleton, Minotaur, Cyclops, GiantSpider, Yeti, Hydra, nelahWrM
 from __archer import  Archerfi
 from __infantry import   Infanfi
 from __cavalry import Cavfi
