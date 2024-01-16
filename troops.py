@@ -14,7 +14,7 @@ class troops:
             self.speed == (0)
         if self.health < (0):
             self.health == (0)
-    balancer()
+
 
 
      
