@@ -274,7 +274,7 @@ def colcavernfight():
 
 
 def GSboss ():
-    input("You've encountered your first boss traveler ")
+    input("You've encountered your next boss traveler ")
     input("THE GINORMOUS GIANT SPIDER shall be your opponent ")
     input("---")
     input("It SPUN around in its WEB, biding its TIME ")
